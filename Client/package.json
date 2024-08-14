@@ -6,6 +6,7 @@
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build",
+        "deploy-client" :"ng build & docker build -f Dockerfile -t dockerhub.dttt.vn/elearning_portal.client:test .",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e"
