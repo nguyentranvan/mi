@@ -2,11 +2,12 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { NotfoundComponent } from './demo/components/notfound/notfound.component';
 import { AppLayoutComponent } from "./layout/app.layout.component";
+import { AuthGuardService } from './lib/services/guard.service';
 
 @NgModule({
     imports: [
         RouterModule.forRoot([
-            { path: 'admin', component: AppLayoutComponent, loadChildren: () => import('./backend/dashboard/dashboard.module').then(m => m.DashboardModule) },
+            { path: 'admin', canActivate: [AuthGuardService], component: AppLayoutComponent, loadChildren: () => import('./backend/dashboard/dashboard.module').then(m => m.DashboardModule) },
             {
                 path: 'demo', component: AppLayoutComponent,
                 children: [
@@ -18,7 +19,7 @@ import { AppLayoutComponent } from "./layout/app.layout.component";
                 ]
             },
             { path: 'auth', loadChildren: () => import('./demo/components/auth/auth.module').then(m => m.AuthModule) },
-            { path: '', loadChildren: () => import('./frontend/landing/landing.module').then(m => m.LandingModule) },
+            { path: '', loadChildren: () => import('./frontend/vnpkc/vnpkc.module').then(m => m.VnpkcModule) },
             { path: 'notfound', component: NotfoundComponent },
             { path: '**', redirectTo: '/notfound' },
         ], { scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled', onSameUrlNavigation: 'reload' })

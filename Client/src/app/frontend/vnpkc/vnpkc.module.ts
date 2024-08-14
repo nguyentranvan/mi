@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LandingRoutingModule } from './landing-routing.module';
-import { LandingComponent } from './landing.component';
+import { VnpkcRoutingModule } from './vnpkc-routing.module';
+import { VNPKCHomeComponent } from './vnpkc.component';
 import { StyleClassModule } from 'primeng/styleclass';
 import { DividerModule } from 'primeng/divider';
 import { ChartModule } from 'primeng/chart';
@@ -11,13 +11,13 @@ import { ButtonModule } from 'primeng/button';
 @NgModule({
     imports: [
         CommonModule,
-        LandingRoutingModule,
+        VnpkcRoutingModule,
         DividerModule,
         StyleClassModule,
         ChartModule,
         PanelModule,
         ButtonModule
     ],
-    declarations: [LandingComponent]
+    declarations: [VNPKCHomeComponent]
 })
-export class LandingModule { }
+export class VnpkcModule { }

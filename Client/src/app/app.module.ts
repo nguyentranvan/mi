@@ -11,14 +11,31 @@ import { EventService } from './demo/service/event.service';
 import { IconService } from './demo/service/icon.service';
 import { NodeService } from './demo/service/node.service';
 import { PhotoService } from './demo/service/photo.service';
+import { AuthService } from './lib/services/auth.service';
+import { AuthGuardService } from './lib/services/guard.service';
+import { OAuthModule, OAuthService, OAuthStorage } from 'angular-oauth2-oidc';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [AppComponent, NotfoundComponent],
-    imports: [AppRoutingModule, AppLayoutModule],
+    imports: [
+        AppRoutingModule, AppLayoutModule,  
+        HttpClientModule,
+        FormsModule,
+        ReactiveFormsModule,
+        OAuthModule.forRoot()],
     providers: [
         { provide: LocationStrategy, useClass: PathLocationStrategy },
         CountryService, CustomerService, EventService, IconService, NodeService,
-        PhotoService, ProductService
+        PhotoService, ProductService,
+        AuthGuardService,
+        AuthService,
+        OAuthService,
+        {
+        provide: OAuthStorage,
+        useValue: localStorage,
+        }
     ],
     bootstrap: [AppComponent],
 })
