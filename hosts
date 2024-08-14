@@ -1,0 +1,88 @@
+﻿# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+
+
+#SNV - TNG
+10.0.68.105 svn03.trinam.vietnam
+
+
+#VNA 2024
+::1 elearningdemo.local
+127.0.0.1 elearningdemo.local
+
+
+#BVBANK - LOCAL
+::1 elearningbvbank.local
+127.0.0.1 elearningbvbank.local
+
+
+#BAOVIET - LOCAL
+::1 elearningbaoviet.local
+127.0.0.1 elearningbaoviet.local
+
+# Added by Docker Desktop
+192.168.2.62 host.docker.internal
+192.168.2.62 gateway.docker.internal
+# To allow the same kube context to work on the host and the container:
+127.0.0.1 kubernetes.docker.internal
+# End of section
+
+#De An NN2025
+::1 elearning.com
+127.0.0.1 elearning.com
+
+::1 elearning-deannn2025.local
+
+#192.168.2.65 rabbitmq
+127.0.0.1 rabbitmq
+
+10.0.68.83 redis
+
+#SKYPEC
+::1 elearningskypec.local
+
+
+::1 elearningvnav2.local
+
+::1 elearningbvbank.local
+
+::1 elearningici.local
+
+::1 elearningdhvinh.local
+
+::1 elearningbvxp.local
+
+::1 elearning.com
+::1 elearningtrial2.local
+::1 elearningexbank.local
+
+::1 elearningdhqg.local
+14.225.3.20 prtg.trinam.vn 
+
+
+192.168.103.211 demo.local
+192.168.103.211 demo-lms.local
+
+::1 elearningtamchuc.local
+127.0.0.1 elearningtamchuc.local
+::1 elearningpgbank.local
+127.0.0.1 elearningpgbank.local
