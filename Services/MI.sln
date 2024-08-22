@@ -9,9 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		thunder-collection.json = thunder-collection.json
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lms.Api", "Lms.Api\Lms.Api.csproj", "{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lms.API", "Lms.Api\Lms.API.csproj", "{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth.API", "Auth.API\Auth.API.csproj", "{DF21E8BD-0483-445E-96A0-042FF3382500}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth.API", "Auth.API\Auth.API.csproj", "{DF21E8BD-0483-445E-96A0-042FF3382500}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Libs", "Common.Libs\Common.Libs.csproj", "{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{DF21E8BD-0483-445E-96A0-042FF3382500}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF21E8BD-0483-445E-96A0-042FF3382500}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF21E8BD-0483-445E-96A0-042FF3382500}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

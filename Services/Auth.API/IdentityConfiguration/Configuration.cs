@@ -1,10 +1,24 @@
 ﻿using IdentityModel;
 using IdentityServer4.Models;
+using IdentityServer4.Services;
 using IdentityServer4.Test;
 using System.Security.Claims;
 
 namespace Auth.API.IdentityConfiguration
 {
+    public class ProfileService : IProfileService
+    {
+        public Task GetProfileDataAsync(ProfileDataRequestContext context)
+        {
+            context.IssuedClaims = context.Subject.Claims.ToList();
+            return Task.FromResult(0);
+        }
+
+        public Task IsActiveAsync(IsActiveContext context)
+        {
+            return Task.FromResult(0);
+        }
+    }
     public class Configuration
     {
         public static IEnumerable<ApiResource> ApiResources =>
@@ -12,8 +26,7 @@ namespace Auth.API.IdentityConfiguration
         {
             new ApiResource("lms.api")
             {
-                Scopes = new List<string>{ "myApi.read","myApi.write" },
-                ApiSecrets = new List<Secret>{ new Secret("supersecret".Sha256()) }
+                Scopes = new List<string>{ "myApi.all" },
             }
         };
         public static IEnumerable<Client> Clients =>
@@ -24,16 +37,16 @@ namespace Auth.API.IdentityConfiguration
                 ClientId = "web",
                 ClientName = "Client web",
                 AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
-                ClientSecrets = { new Secret("secret".Sha256()) },
-                AllowedScopes = { "myApi.read" }
+                RequireClientSecret = false,
+                AllowOfflineAccess = true,
+                AllowedScopes = { "myApi.all" }
             },
         };
 
         public static IEnumerable<ApiScope> ApiScopes =>
         new ApiScope[]
         {
-            new ApiScope("myApi.read"),
-            new ApiScope("myApi.write"),
+            new ApiScope("myApi.all"),
         };
 
         public static IEnumerable<IdentityResource> IdentityResources =>

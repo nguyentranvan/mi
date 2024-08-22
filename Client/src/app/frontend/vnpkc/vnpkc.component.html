@@ -30,9 +30,12 @@
                         </a>
                     </li>
                 </ul>
-                <div class="flex justify-content-between lg:block border-top-1 lg:border-top-none surface-border py-3 lg:py-0 mt-3 lg:mt-0">
+                <div *ngIf="!isLogin" class="flex justify-content-between lg:block border-top-1 lg:border-top-none surface-border py-3 lg:py-0 mt-3 lg:mt-0">
                     <button pButton pRipple label="Đăng nhập" (click)="router.navigate(['/auth/login'])" class="p-element p-ripple p-button-outlined p-button p-component font-bold border-radius-none"></button>
                     <!-- <button pButton pRipple label="Đăng ký" class="p-element p-ripple p-button-secondary p-button p-component ml-1 font-bold border-radius-none"></button> -->
+                </div>
+                <div *ngIf="isLogin" class="flex justify-content-between lg:block border-top-1 lg:border-top-none surface-border py-3 lg:py-0 mt-3 lg:mt-0">
+                    <button class="p-link" ng-reflect-router-link="/admin" ><i class="pi pi-cog"></i><span>&nbsp;Quản trị</span></button>
                 </div>
             </div>
         </div>

@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.Http;
 using System.Text;
 using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json.Linq;
+using MI.Constant.Lib;
 
 namespace Auth.API.Validators
 {
@@ -33,7 +34,14 @@ namespace Auth.API.Validators
 
         public async Task ValidateAsync(ResourceOwnerPasswordValidationContext context)
         {
-            var claims = new List<Claim>();
+            var claims = new List<Claim>
+            {
+                new Claim(AuthClaim.UserId, Guid.Empty.ToString()),
+                new Claim(AuthClaim.UserName, "admin"),
+                new Claim(AuthClaim.DisplayName, "Quản trị hệ thống"),
+                new Claim(AuthClaim.Email, "demo@local.com"),
+            };
+
             context.Result = new GrantValidationResult(context.UserName, "password", claims);
         }
     }

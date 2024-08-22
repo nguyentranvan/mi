@@ -20,7 +20,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
     declarations: [AppComponent, NotfoundComponent],
     imports: [
-        AppRoutingModule, AppLayoutModule,  
+        AppRoutingModule,
+        AppLayoutModule,  
         HttpClientModule,
         FormsModule,
         ReactiveFormsModule,

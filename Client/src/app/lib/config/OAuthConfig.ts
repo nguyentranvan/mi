@@ -5,7 +5,7 @@ import { appConfig } from './AppConfig';
     issuer              : appConfig.issuer,
     tokenEndpoint       : `${appConfig.issuer}/connect/token`,
     clientId            : appConfig.clientId,
-    showDebugInformation: false,
+    showDebugInformation: true,
     requestAccessToken  : true,
     responseType        : 'token',
     oidc                : false,

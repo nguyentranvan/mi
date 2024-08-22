@@ -3,44 +3,64 @@
   "WorkspaceRootPath": "E:\\GitHub\\mi\\Services\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|e:\\github\\mi\\services\\lms.api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|solutionrelative:lms.api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|e:\\github\\mi\\services\\lms.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|solutionrelative:lms.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|e:\\github\\mi\\services\\auth.api\\identityconfiguration\\resourceownerpasswordvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|solutionrelative:auth.api\\identityconfiguration\\resourceownerpasswordvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|e:\\github\\mi\\services\\lms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|solutionrelative:lms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|e:\\github\\mi\\services\\auth.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|solutionrelative:auth.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|e:\\github\\mi\\services\\auth.api\\auth.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|solutionrelative:auth.api\\auth.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|e:\\github\\mi\\services\\auth.api\\identityconfiguration\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|solutionrelative:auth.api\\identityconfiguration\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|e:\\github\\mi\\services\\auth.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|solutionrelative:auth.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|e:\\github\\mi\\services\\lms.api\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|solutionrelative:lms.api\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|e:\\github\\mi\\services\\lms.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|solutionrelative:lms.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|e:\\github\\mi\\services\\lms.api\\lms.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|solutionrelative:lms.api\\lms.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|e:\\github\\mi\\services\\lms.api\\lms.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|solutionrelative:lms.api\\lms.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|e:\\github\\mi\\services\\lms.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|solutionrelative:lms.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|e:\\github\\mi\\services\\auth.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|solutionrelative:auth.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}|Common.Libs\\Common.Libs.csproj|e:\\github\\mi\\services\\common.libs\\authclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}|Common.Libs\\Common.Libs.csproj|solutionrelative:common.libs\\authclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|e:\\github\\mi\\services\\lms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|solutionrelative:lms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|e:\\github\\mi\\services\\lms.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|solutionrelative:lms.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|e:\\github\\mi\\services\\auth.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|solutionrelative:auth.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|e:\\github\\mi\\services\\auth.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|solutionrelative:auth.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|e:\\github\\mi\\services\\auth.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|solutionrelative:auth.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|e:\\github\\mi\\services\\lms.api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.Api.csproj|solutionrelative:lms.api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,98 +78,175 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "Lms.Api\\Controllers\\BaseController.cs",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\Lms.Api\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "Lms.Api\\Controllers\\BaseController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T13:38:30.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Lms.Api\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\Lms.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Lms.Api\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-21T12:11:46.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ResourceOwnerPasswordValidator.cs",
               "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Auth.API\\IdentityConfiguration\\ResourceOwnerPasswordValidator.cs",
               "RelativeDocumentMoniker": "Auth.API\\IdentityConfiguration\\ResourceOwnerPasswordValidator.cs",
               "ToolTip": "E:\\GitHub\\mi\\Services\\Auth.API\\IdentityConfiguration\\ResourceOwnerPasswordValidator.cs",
               "RelativeToolTip": "Auth.API\\IdentityConfiguration\\ResourceOwnerPasswordValidator.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACMAAAAMAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAuwC8AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-21T03:40:51.231Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\Program.cs",
-              "RelativeDocumentMoniker": "Lms.Api\\Program.cs",
-              "ToolTip": "E:\\GitHub\\mi\\Services\\Lms.Api\\Program.cs",
-              "RelativeToolTip": "Lms.Api\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Auth.API\\IdentityConfiguration\\Configuration.cs",
+              "RelativeDocumentMoniker": "Auth.API\\IdentityConfiguration\\Configuration.cs",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\Auth.API\\IdentityConfiguration\\Configuration.cs",
+              "RelativeToolTip": "Auth.API\\IdentityConfiguration\\Configuration.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAADAAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T15:08:48.102Z",
+              "WhenOpened": "2024-08-21T03:18:00.412Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Auth.API\\Program.cs",
               "RelativeDocumentMoniker": "Auth.API\\Program.cs",
               "ToolTip": "E:\\GitHub\\mi\\Services\\Auth.API\\Program.cs",
               "RelativeToolTip": "Auth.API\\Program.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACMAAAAAAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAsAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-21T02:27:15.713Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Lms.Api\\Controllers\\WeatherForecastController.cs",
               "ToolTip": "E:\\GitHub\\mi\\Services\\Lms.Api\\Controllers\\WeatherForecastController.cs",
               "RelativeToolTip": "Lms.Api\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAjAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAswBMAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-21T02:00:52.05Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "Lms.Api\\WeatherForecast.cs",
-              "ToolTip": "E:\\GitHub\\mi\\Services\\Lms.Api\\WeatherForecast.cs",
-              "RelativeToolTip": "Lms.Api\\WeatherForecast.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T04:43:32.374Z",
+              "DocumentIndex": 6,
+              "Title": "Lms.API",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\Lms.API.csproj",
+              "RelativeDocumentMoniker": "Lms.Api\\Lms.API.csproj",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\Lms.Api\\Lms.API.csproj",
+              "RelativeToolTip": "Lms.Api\\Lms.API.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-21T12:46:18.581Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
+              "Title": "Lms.API",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\Lms.API.csproj",
+              "RelativeDocumentMoniker": "Lms.Api\\Lms.API.csproj",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\Lms.Api\\Lms.API.csproj",
+              "RelativeToolTip": "Lms.Api\\Lms.API.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-21T12:46:12.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Auth.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Auth.API\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\Auth.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Auth.API\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-21T04:14:59.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Lms.Api\\appsettings.Development.json",
               "ToolTip": "E:\\GitHub\\mi\\Services\\Lms.Api\\appsettings.Development.json",
               "RelativeToolTip": "Lms.Api\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-08-20T15:13:19.617Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Auth.API.http",
-              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Auth.API\\Auth.API.http",
-              "RelativeDocumentMoniker": "Auth.API\\Auth.API.http",
-              "ToolTip": "E:\\GitHub\\mi\\Services\\Auth.API\\Auth.API.http",
-              "RelativeToolTip": "Auth.API\\Auth.API.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-08-21T04:47:34.648Z",
+              "DocumentIndex": 9,
+              "Title": "AuthClaim.cs",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Common.Libs\\AuthClaim.cs",
+              "RelativeDocumentMoniker": "Common.Libs\\AuthClaim.cs",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\Common.Libs\\AuthClaim.cs",
+              "RelativeToolTip": "Common.Libs\\AuthClaim.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T12:27:39.611Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Lms.Api\\Program.cs",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\Lms.Api\\Program.cs",
+              "RelativeToolTip": "Lms.Api\\Program.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T15:08:48.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Auth.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Auth.API\\appsettings.json",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\Auth.API\\appsettings.json",
+              "RelativeToolTip": "Auth.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-21T12:11:02.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Auth.API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Auth.API\\appsettings.Development.json",
@@ -162,28 +259,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Configuration.cs",
-              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Auth.API\\IdentityConfiguration\\Configuration.cs",
-              "RelativeDocumentMoniker": "Auth.API\\IdentityConfiguration\\Configuration.cs",
-              "ToolTip": "E:\\GitHub\\mi\\Services\\Auth.API\\IdentityConfiguration\\Configuration.cs",
-              "RelativeToolTip": "Auth.API\\IdentityConfiguration\\Configuration.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwAwAAAAkAAAA",
+              "DocumentIndex": 14,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "Lms.Api\\WeatherForecast.cs",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\Lms.Api\\WeatherForecast.cs",
+              "RelativeToolTip": "Lms.Api\\WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T03:18:00.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Auth.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Auth.API\\Properties\\launchSettings.json",
-              "ToolTip": "E:\\GitHub\\mi\\Services\\Auth.API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Auth.API\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-21T04:14:59.738Z",
+              "WhenOpened": "2024-08-21T04:43:32.374Z",
               "EditorCaption": ""
             }
           ]
