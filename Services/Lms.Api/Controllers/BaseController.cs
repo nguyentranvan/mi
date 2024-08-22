@@ -1,4 +1,5 @@
-﻿using MI.Constant.Lib;
+﻿using Lms.API.DAL;
+using MI.Constant.Lib;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -6,6 +7,7 @@ namespace MI.Controller.Lib
 {
     public abstract class MIController : ControllerBase
     {
+        #region Properties
         public string Session => string.IsNullOrEmpty(HttpContext.Request.Headers["log-session"]) ? "" : Convert.ToString(HttpContext.Request.Headers["log-session"]);
         public string ClientIps
         {
@@ -53,6 +55,19 @@ namespace MI.Controller.Lib
                 return context.Value;
             }
         }
+        #endregion
+    }
+    public abstract class MIController<TModel, TDAL> : MIController where TModel
+        : class where TDAL : IDALBase<TModel>
+    {
+        protected readonly TDAL _dal;
+
+        public MIController(TDAL dal)
+        {
+            _dal = dal;
+        }
+
+
     }
 
 }
