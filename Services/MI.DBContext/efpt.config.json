@@ -1,0 +1,142 @@
+﻿{
+   "CodeGenerationMode": 4,
+   "ContextClassName": "DBContext",
+   "ContextNamespace": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "MI.DBContext",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[ACertificate]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ACertificationUser]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AOrganize]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AProfile]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AspNetRoleClaims]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AspNetRoles]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AspNetUserClaims]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AspNetUserLogins]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AspNetUserRoles]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AspNetUsers]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AspNetUserTokens]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[EClass]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[EClassCate]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[EClassContent]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[EClassLearning]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[EClassLearningLog]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[EClassUser]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TTestAnswer]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TTestCate]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TTestExam]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TTestForm]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TTestFormDetail]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TTestInfo]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TTestQuestion]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TTestUser]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": null,
+   "UncountableWords": null,
+   "UseAsyncStoredProcedureCalls": true,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": true,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UsePrefixNavigationNaming": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false
+}

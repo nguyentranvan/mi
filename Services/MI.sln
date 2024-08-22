@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lms.API", "Lms.Api\Lms.API.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth.API", "Auth.API\Auth.API.csproj", "{DF21E8BD-0483-445E-96A0-042FF3382500}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Libs", "Common.Libs\Common.Libs.csproj", "{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Libs", "Common.Libs\Common.Libs.csproj", "{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MI.DBContext", "MI.DBContext\MI.DBContext.csproj", "{6F8904C6-9BE8-49E1-9581-9A9A09709560}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F8904C6-9BE8-49E1-9581-9A9A09709560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F8904C6-9BE8-49E1-9581-9A9A09709560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F8904C6-9BE8-49E1-9581-9A9A09709560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F8904C6-9BE8-49E1-9581-9A9A09709560}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

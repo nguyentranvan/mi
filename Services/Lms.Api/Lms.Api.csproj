@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Common.Libs\Common.Libs.csproj" />
+    <ProjectReference Include="..\MI.DBContext\MI.DBContext.csproj" />
   </ItemGroup>
 
 </Project>
