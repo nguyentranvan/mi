@@ -13,60 +13,58 @@ public partial class DBContext : DbContext
     {
     }
 
-    public virtual DbSet<Acertificate> Acertificates { get; set; }
+    public virtual DbSet<ACertificate> ACertificate { get; set; }
 
-    public virtual DbSet<AcertificationUser> AcertificationUsers { get; set; }
+    public virtual DbSet<ACertificationUser> ACertificationUser { get; set; }
 
-    public virtual DbSet<Aorganize> Aorganizes { get; set; }
+    public virtual DbSet<AOrganize> AOrganize { get; set; }
 
-    public virtual DbSet<Aprofile> Aprofiles { get; set; }
+    public virtual DbSet<AProfile> AProfile { get; set; }
 
-    public virtual DbSet<AspNetRole> AspNetRoles { get; set; }
+    public virtual DbSet<AspNetRoleClaims> AspNetRoleClaims { get; set; }
 
-    public virtual DbSet<AspNetRoleClaim> AspNetRoleClaims { get; set; }
+    public virtual DbSet<AspNetRoles> AspNetRoles { get; set; }
 
-    public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
+    public virtual DbSet<AspNetUserClaims> AspNetUserClaims { get; set; }
 
-    public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; }
+    public virtual DbSet<AspNetUserLogins> AspNetUserLogins { get; set; }
 
-    public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
+    public virtual DbSet<AspNetUserTokens> AspNetUserTokens { get; set; }
 
-    public virtual DbSet<AspNetUserToken> AspNetUserTokens { get; set; }
+    public virtual DbSet<AspNetUsers> AspNetUsers { get; set; }
 
-    public virtual DbSet<Eclass> Eclasses { get; set; }
+    public virtual DbSet<EClass> EClass { get; set; }
 
-    public virtual DbSet<EclassCate> EclassCates { get; set; }
+    public virtual DbSet<EClassCate> EClassCate { get; set; }
 
-    public virtual DbSet<EclassContent> EclassContents { get; set; }
+    public virtual DbSet<EClassContent> EClassContent { get; set; }
 
-    public virtual DbSet<EclassLearning> EclassLearnings { get; set; }
+    public virtual DbSet<EClassLearning> EClassLearning { get; set; }
 
-    public virtual DbSet<EclassLearningLog> EclassLearningLogs { get; set; }
+    public virtual DbSet<EClassLearningLog> EClassLearningLog { get; set; }
 
-    public virtual DbSet<EclassUser> EclassUsers { get; set; }
+    public virtual DbSet<EClassUser> EClassUser { get; set; }
 
-    public virtual DbSet<TtestAnswer> TtestAnswers { get; set; }
+    public virtual DbSet<TTestAnswer> TTestAnswer { get; set; }
 
-    public virtual DbSet<TtestCate> TtestCates { get; set; }
+    public virtual DbSet<TTestCate> TTestCate { get; set; }
 
-    public virtual DbSet<TtestExam> TtestExams { get; set; }
+    public virtual DbSet<TTestExam> TTestExam { get; set; }
 
-    public virtual DbSet<TtestForm> TtestForms { get; set; }
+    public virtual DbSet<TTestForm> TTestForm { get; set; }
 
-    public virtual DbSet<TtestFormDetail> TtestFormDetails { get; set; }
+    public virtual DbSet<TTestFormDetail> TTestFormDetail { get; set; }
 
-    public virtual DbSet<TtestInfo> TtestInfos { get; set; }
+    public virtual DbSet<TTestInfo> TTestInfo { get; set; }
 
-    public virtual DbSet<TtestQuestion> TtestQuestions { get; set; }
+    public virtual DbSet<TTestQuestion> TTestQuestion { get; set; }
 
-    public virtual DbSet<TtestUser> TtestUsers { get; set; }
+    public virtual DbSet<TTestUser> TTestUser { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Acertificate>(entity =>
+        modelBuilder.Entity<ACertificate>(entity =>
         {
-            entity.ToTable("ACertificate");
-
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.Code)
                 .IsRequired()
@@ -82,10 +80,8 @@ public partial class DBContext : DbContext
                 .HasMaxLength(250);
         });
 
-        modelBuilder.Entity<AcertificationUser>(entity =>
+        modelBuilder.Entity<ACertificationUser>(entity =>
         {
-            entity.ToTable("ACertificationUser");
-
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.Code)
                 .IsRequired()
@@ -97,10 +93,8 @@ public partial class DBContext : DbContext
             entity.Property(e => e.LastUpdatedDate).HasColumnType("datetime");
         });
 
-        modelBuilder.Entity<Aorganize>(entity =>
+        modelBuilder.Entity<AOrganize>(entity =>
         {
-            entity.ToTable("AOrganize");
-
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.LastUpdatedDate).HasColumnType("datetime");
@@ -115,23 +109,27 @@ public partial class DBContext : DbContext
                 .HasMaxLength(255);
         });
 
-        modelBuilder.Entity<Aprofile>(entity =>
+        modelBuilder.Entity<AProfile>(entity =>
         {
-            entity.ToTable("AProfile");
+            entity.HasKey(e => e.UserId).HasName("PK_AProfile_1");
 
+            entity.Property(e => e.UserId).ValueGeneratedNever();
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.EmployeeCode).HasMaxLength(150);
+            entity.Property(e => e.FullName).HasMaxLength(250);
             entity.Property(e => e.IsLockedOutTime).HasColumnType("datetime");
             entity.Property(e => e.LastUpdatedDate).HasColumnType("datetime");
+            entity.Property(e => e.Password)
+                .IsRequired()
+                .HasMaxLength(50)
+                .HasComment("Mật khẩu");
+            entity.Property(e => e.Salt)
+                .IsRequired()
+                .HasMaxLength(50);
+            entity.Property(e => e.UserName).HasMaxLength(50);
         });
 
-        modelBuilder.Entity<AspNetRole>(entity =>
-        {
-            entity.Property(e => e.Name).HasMaxLength(256);
-            entity.Property(e => e.NormalizedName).HasMaxLength(256);
-        });
-
-        modelBuilder.Entity<AspNetRoleClaim>(entity =>
+        modelBuilder.Entity<AspNetRoleClaims>(entity =>
         {
             entity.Property(e => e.RoleId)
                 .IsRequired()
@@ -140,29 +138,13 @@ public partial class DBContext : DbContext
             entity.HasOne(d => d.Role).WithMany(p => p.AspNetRoleClaims).HasForeignKey(d => d.RoleId);
         });
 
-        modelBuilder.Entity<AspNetUser>(entity =>
+        modelBuilder.Entity<AspNetRoles>(entity =>
         {
-            entity.Property(e => e.Discriminator)
-                .IsRequired()
-                .HasMaxLength(21);
-            entity.Property(e => e.Email).HasMaxLength(256);
-            entity.Property(e => e.NormalizedEmail).HasMaxLength(256);
-            entity.Property(e => e.NormalizedUserName).HasMaxLength(256);
-            entity.Property(e => e.UserName).HasMaxLength(256);
-
-            entity.HasMany(d => d.Roles).WithMany(p => p.Users)
-                .UsingEntity<Dictionary<string, object>>(
-                    "AspNetUserRole",
-                    r => r.HasOne<AspNetRole>().WithMany().HasForeignKey("RoleId"),
-                    l => l.HasOne<AspNetUser>().WithMany().HasForeignKey("UserId"),
-                    j =>
-                    {
-                        j.HasKey("UserId", "RoleId");
-                        j.ToTable("AspNetUserRoles");
-                    });
+            entity.Property(e => e.Name).HasMaxLength(256);
+            entity.Property(e => e.NormalizedName).HasMaxLength(256);
         });
 
-        modelBuilder.Entity<AspNetUserClaim>(entity =>
+        modelBuilder.Entity<AspNetUserClaims>(entity =>
         {
             entity.Property(e => e.UserId)
                 .IsRequired()
@@ -171,7 +153,7 @@ public partial class DBContext : DbContext
             entity.HasOne(d => d.User).WithMany(p => p.AspNetUserClaims).HasForeignKey(d => d.UserId);
         });
 
-        modelBuilder.Entity<AspNetUserLogin>(entity =>
+        modelBuilder.Entity<AspNetUserLogins>(entity =>
         {
             entity.HasKey(e => new { e.LoginProvider, e.ProviderKey });
 
@@ -182,17 +164,36 @@ public partial class DBContext : DbContext
             entity.HasOne(d => d.User).WithMany(p => p.AspNetUserLogins).HasForeignKey(d => d.UserId);
         });
 
-        modelBuilder.Entity<AspNetUserToken>(entity =>
+        modelBuilder.Entity<AspNetUserTokens>(entity =>
         {
             entity.HasKey(e => new { e.UserId, e.LoginProvider, e.Name });
 
             entity.HasOne(d => d.User).WithMany(p => p.AspNetUserTokens).HasForeignKey(d => d.UserId);
         });
 
-        modelBuilder.Entity<Eclass>(entity =>
+        modelBuilder.Entity<AspNetUsers>(entity =>
         {
-            entity.ToTable("EClass");
+            entity.Property(e => e.Discriminator)
+                .IsRequired()
+                .HasMaxLength(21);
+            entity.Property(e => e.Email).HasMaxLength(256);
+            entity.Property(e => e.NormalizedEmail).HasMaxLength(256);
+            entity.Property(e => e.NormalizedUserName).HasMaxLength(256);
+            entity.Property(e => e.UserName).HasMaxLength(256);
 
+            entity.HasMany(d => d.Role).WithMany(p => p.User)
+                .UsingEntity<Dictionary<string, object>>(
+                    "AspNetUserRoles",
+                    r => r.HasOne<AspNetRoles>().WithMany().HasForeignKey("RoleId"),
+                    l => l.HasOne<AspNetUsers>().WithMany().HasForeignKey("UserId"),
+                    j =>
+                    {
+                        j.HasKey("UserId", "RoleId");
+                    });
+        });
+
+        modelBuilder.Entity<EClass>(entity =>
+        {
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.Code)
                 .IsRequired()
@@ -207,10 +208,8 @@ public partial class DBContext : DbContext
             entity.Property(e => e.Thumbnail).HasMaxLength(250);
         });
 
-        modelBuilder.Entity<EclassCate>(entity =>
+        modelBuilder.Entity<EClassCate>(entity =>
         {
-            entity.ToTable("EClassCate");
-
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.Code)
                 .IsRequired()
@@ -222,10 +221,8 @@ public partial class DBContext : DbContext
                 .HasMaxLength(250);
         });
 
-        modelBuilder.Entity<EclassContent>(entity =>
+        modelBuilder.Entity<EClassContent>(entity =>
         {
-            entity.ToTable("EClassContent");
-
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.FileId).HasMaxLength(250);
@@ -236,10 +233,8 @@ public partial class DBContext : DbContext
                 .HasMaxLength(250);
         });
 
-        modelBuilder.Entity<EclassLearning>(entity =>
+        modelBuilder.Entity<EClassLearning>(entity =>
         {
-            entity.ToTable("EClassLearning");
-
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.LastUpdatedDate).HasColumnType("datetime");
@@ -247,10 +242,8 @@ public partial class DBContext : DbContext
             entity.Property(e => e.LearnTime).HasColumnType("decimal(18, 2)");
         });
 
-        modelBuilder.Entity<EclassLearningLog>(entity =>
+        modelBuilder.Entity<EClassLearningLog>(entity =>
         {
-            entity.ToTable("EClassLearningLog");
-
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.ActionCode)
                 .IsRequired()
@@ -260,10 +253,8 @@ public partial class DBContext : DbContext
             entity.Property(e => e.LogTime).HasColumnType("datetime");
         });
 
-        modelBuilder.Entity<EclassUser>(entity =>
+        modelBuilder.Entity<EClassUser>(entity =>
         {
-            entity.ToTable("EClassUser");
-
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.ApprovedTime).HasColumnType("datetime");
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
@@ -282,20 +273,16 @@ public partial class DBContext : DbContext
                 .HasMaxLength(50);
         });
 
-        modelBuilder.Entity<TtestAnswer>(entity =>
+        modelBuilder.Entity<TTestAnswer>(entity =>
         {
-            entity.ToTable("TTestAnswer");
-
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.Answer).IsRequired();
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.LastUpdatedDate).HasColumnType("datetime");
         });
 
-        modelBuilder.Entity<TtestCate>(entity =>
+        modelBuilder.Entity<TTestCate>(entity =>
         {
-            entity.ToTable("TTestCate");
-
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.Code)
                 .IsRequired()
@@ -307,10 +294,8 @@ public partial class DBContext : DbContext
                 .HasMaxLength(250);
         });
 
-        modelBuilder.Entity<TtestExam>(entity =>
+        modelBuilder.Entity<TTestExam>(entity =>
         {
-            entity.ToTable("TTestExam");
-
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.DisplayName)
@@ -326,10 +311,8 @@ public partial class DBContext : DbContext
                 .HasMaxLength(50);
         });
 
-        modelBuilder.Entity<TtestForm>(entity =>
+        modelBuilder.Entity<TTestForm>(entity =>
         {
-            entity.ToTable("TTestForm");
-
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.Code)
                 .IsRequired()
@@ -342,19 +325,15 @@ public partial class DBContext : DbContext
                 .HasMaxLength(250);
         });
 
-        modelBuilder.Entity<TtestFormDetail>(entity =>
+        modelBuilder.Entity<TTestFormDetail>(entity =>
         {
-            entity.ToTable("TTestFormDetail");
-
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.LastUpdatedDate).HasColumnType("datetime");
         });
 
-        modelBuilder.Entity<TtestInfo>(entity =>
+        modelBuilder.Entity<TTestInfo>(entity =>
         {
-            entity.ToTable("TTestInfo");
-
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.Code)
                 .IsRequired()
@@ -370,10 +349,8 @@ public partial class DBContext : DbContext
             entity.Property(e => e.Thumbnail).HasMaxLength(250);
         });
 
-        modelBuilder.Entity<TtestQuestion>(entity =>
+        modelBuilder.Entity<TTestQuestion>(entity =>
         {
-            entity.ToTable("TTestQuestion");
-
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.Code)
                 .IsRequired()
@@ -384,10 +361,8 @@ public partial class DBContext : DbContext
             entity.Property(e => e.Suggest).HasComment("Gợi ý");
         });
 
-        modelBuilder.Entity<TtestUser>(entity =>
+        modelBuilder.Entity<TTestUser>(entity =>
         {
-            entity.ToTable("TTestUser");
-
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.DisplayName)

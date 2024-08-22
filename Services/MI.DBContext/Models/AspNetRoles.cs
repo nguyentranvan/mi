@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace MI.DBContext.Models;
 
-public partial class AspNetRole
+public partial class AspNetRoles
 {
     public string Id { get; set; }
 
@@ -15,7 +15,7 @@ public partial class AspNetRole
 
     public string ConcurrencyStamp { get; set; }
 
-    public virtual ICollection<AspNetRoleClaim> AspNetRoleClaims { get; set; } = new List<AspNetRoleClaim>();
+    public virtual ICollection<AspNetRoleClaims> AspNetRoleClaims { get; set; } = new List<AspNetRoleClaims>();
 
-    public virtual ICollection<AspNetUser> Users { get; set; } = new List<AspNetUser>();
+    public virtual ICollection<AspNetUsers> User { get; set; } = new List<AspNetUsers>();
 }

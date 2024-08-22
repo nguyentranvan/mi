@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace MI.DBContext.Models;
 
-public partial class EclassUser
+public partial class EClassUser
 {
     public Guid Id { get; set; }
 

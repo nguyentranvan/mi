@@ -1,19 +1,25 @@
-﻿using MI.DBContext.Models;
+﻿using MI.DataResponse.Lib;
+using MI.DBContext.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Linq.Expressions;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace MI.DAL.Lib
 {
     public interface IDALBase<TModel>
     {
         Task<TModel> Get(object id);
-        IQueryable<TModel> GetAll();
+        Task<DataResponse<TModel>> GetAll();
 
         void Add(TModel obj);
 
         Task AddRange(List<TModel> list);
 
         void Delete(TModel obj);
+
+        Task<int> SaveChangesAsync();
+
 
     }
 
@@ -33,9 +39,14 @@ namespace MI.DAL.Lib
             return await dbContext.Set<TModel>().FindAsync(id);
         }
 
-        public virtual IQueryable<TModel> GetAll()
+        public virtual async Task<DataResponse<TModel>> GetAll()
         {
-            return dbContext.Set<TModel>().Select(c => c).AsQueryable();
+            var data = new DataResponse<TModel>
+            {
+                TotalRows = await dbContext.Set<TModel>().CountAsync(),
+                ListData = await dbContext.Set<TModel>().Select(c => c).ToListAsync()
+            };
+            return data;
         }
 
         public virtual void Add(TModel obj)
@@ -48,9 +59,10 @@ namespace MI.DAL.Lib
             await dbContext.Set<TModel>().AddRangeAsync(list);
         }
 
-        public virtual async Task SaveChangesAsync()
+        public virtual async Task<int> SaveChangesAsync()
         {
-            await dbContext.SaveChangesAsync();
+            var i = await dbContext.SaveChangesAsync();
+            return i;
         }
 
 

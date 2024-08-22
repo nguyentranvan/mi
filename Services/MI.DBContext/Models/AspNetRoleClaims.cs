@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace MI.DBContext.Models;
 
-public partial class AspNetRoleClaim
+public partial class AspNetRoleClaims
 {
     public int Id { get; set; }
 
@@ -15,5 +15,5 @@ public partial class AspNetRoleClaim
 
     public string ClaimValue { get; set; }
 
-    public virtual AspNetRole Role { get; set; }
+    public virtual AspNetRoles Role { get; set; }
 }

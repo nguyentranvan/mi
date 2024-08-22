@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace MI.DBContext.Models;
 
-public partial class Acertificate
+public partial class ACertificate
 {
     public Guid Id { get; set; }
 

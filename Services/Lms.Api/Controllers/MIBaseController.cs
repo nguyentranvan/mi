@@ -1,11 +1,12 @@
 ﻿using Lms.API.DAL;
 using MI.Constant.Lib;
+using MI.DAL.Lib;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
 namespace MI.Controller.Lib
 {
-    public abstract class MIController : ControllerBase
+    public abstract class MIBaseController : ControllerBase
     {
         #region Properties
         public string Session => string.IsNullOrEmpty(HttpContext.Request.Headers["log-session"]) ? "" : Convert.ToString(HttpContext.Request.Headers["log-session"]);
@@ -57,12 +58,12 @@ namespace MI.Controller.Lib
         }
         #endregion
     }
-    public abstract class MIController<TModel, TDAL> : MIController where TModel
+    public abstract class MIBaseController<TModel, TDAL> : MIBaseController where TModel
         : class where TDAL : IDALBase<TModel>
     {
         protected readonly TDAL _dal;
 
-        public MIController(TDAL dal)
+        public MIBaseController(TDAL dal)
         {
             _dal = dal;
         }

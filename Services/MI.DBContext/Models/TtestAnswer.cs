@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace MI.DBContext.Models;
 
-public partial class TtestAnswer
+public partial class TTestAnswer
 {
     public Guid Id { get; set; }
 

@@ -5,17 +5,26 @@ using System.Collections.Generic;
 
 namespace MI.DBContext.Models;
 
-public partial class Aprofile
+public partial class AProfile
 {
-    public int Id { get; set; }
-
     public Guid UserId { get; set; }
+
+    public string UserName { get; set; }
+
+    public string FullName { get; set; }
 
     public string EmployeeCode { get; set; }
 
     public Guid? DepartmentId { get; set; }
 
     public Guid OrganizeId { get; set; }
+
+    /// <summary>
+    /// Mật khẩu
+    /// </summary>
+    public string Password { get; set; }
+
+    public string Salt { get; set; }
 
     public bool IsDeleted { get; set; }
 
