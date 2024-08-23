@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "E:\\GitHub\\mi\\Services\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}|Common.Libs\\Common.Libs.csproj|e:\\github\\mi\\services\\common.libs\\helpers\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}|Common.Libs\\Common.Libs.csproj|solutionrelative:common.libs\\helpers\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\github\\mi\\services\\lms.api\\controllers\\aprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|solutionrelative:lms.api\\controllers\\aprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\github\\mi\\services\\lms.api\\controllers\\mibasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|solutionrelative:lms.api\\controllers\\mibasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\github\\mi\\services\\lms.api\\dal\\aprofiledal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|solutionrelative:lms.api\\dal\\aprofiledal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F8904C6-9BE8-49E1-9581-9A9A09709560}|MI.DBContext\\MI.DBContext.csproj|e:\\github\\mi\\services\\mi.dbcontext\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6F8904C6-9BE8-49E1-9581-9A9A09709560}|MI.DBContext\\MI.DBContext.csproj|solutionrelative:mi.dbcontext\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F8904C6-9BE8-49E1-9581-9A9A09709560}|MI.DBContext\\MI.DBContext.csproj|e:\\github\\mi\\services\\mi.dbcontext\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6F8904C6-9BE8-49E1-9581-9A9A09709560}|MI.DBContext\\MI.DBContext.csproj|solutionrelative:mi.dbcontext\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}|Common.Libs\\Common.Libs.csproj|e:\\github\\mi\\services\\common.libs\\helpers\\randomsecureversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}|Common.Libs\\Common.Libs.csproj|solutionrelative:common.libs\\helpers\\randomsecureversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}|Common.Libs\\Common.Libs.csproj|e:\\github\\mi\\services\\common.libs\\helpers\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}|Common.Libs\\Common.Libs.csproj|solutionrelative:common.libs\\helpers\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}|Common.Libs\\Common.Libs.csproj|e:\\github\\mi\\services\\common.libs\\helpers\\passwordgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,14 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}|Common.Libs\\Common.Libs.csproj|e:\\github\\mi\\services\\common.libs\\common\\dataresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}|Common.Libs\\Common.Libs.csproj|solutionrelative:common.libs\\common\\dataresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\github\\mi\\services\\lms.api\\controllers\\aprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|solutionrelative:lms.api\\controllers\\aprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\github\\mi\\services\\lms.api\\controllers\\mibasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|solutionrelative:lms.api\\controllers\\mibasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\github\\mi\\services\\lms.api\\dal\\mibasedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,108 +74,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "AProfileDAL.cs",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\DAL\\AProfileDAL.cs",
+              "RelativeDocumentMoniker": "Lms.Api\\DAL\\AProfileDAL.cs",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\Lms.Api\\DAL\\AProfileDAL.cs",
+              "RelativeToolTip": "Lms.Api\\DAL\\AProfileDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T00:58:09.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\MI.DBContext\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "MI.DBContext\\appsettings.Development.json",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\MI.DBContext\\appsettings.Development.json",
+              "RelativeToolTip": "MI.DBContext\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-23T00:57:53.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\MI.DBContext\\appsettings.json",
+              "RelativeDocumentMoniker": "MI.DBContext\\appsettings.json",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\MI.DBContext\\appsettings.json",
+              "RelativeToolTip": "MI.DBContext\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-23T00:57:50.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "RandomSecureVersion.cs",
               "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Common.Libs\\Helpers\\RandomSecureVersion.cs",
               "RelativeDocumentMoniker": "Common.Libs\\Helpers\\RandomSecureVersion.cs",
               "ToolTip": "E:\\GitHub\\mi\\Services\\Common.Libs\\Helpers\\RandomSecureVersion.cs",
               "RelativeToolTip": "Common.Libs\\Helpers\\RandomSecureVersion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-23T00:54:57.587Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PasswordGenerator.cs",
-              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Common.Libs\\Helpers\\PasswordGenerator.cs",
-              "RelativeDocumentMoniker": "Common.Libs\\Helpers\\PasswordGenerator.cs",
-              "ToolTip": "E:\\GitHub\\mi\\Services\\Common.Libs\\Helpers\\PasswordGenerator.cs",
-              "RelativeToolTip": "Common.Libs\\Helpers\\PasswordGenerator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T00:54:50.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "PasswordHelper.cs",
               "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Common.Libs\\Helpers\\PasswordHelper.cs",
               "RelativeDocumentMoniker": "Common.Libs\\Helpers\\PasswordHelper.cs",
               "ToolTip": "E:\\GitHub\\mi\\Services\\Common.Libs\\Helpers\\PasswordHelper.cs",
               "RelativeToolTip": "Common.Libs\\Helpers\\PasswordHelper.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAQAAAAYAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAwwAQAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-23T00:53:48.446Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\Program.cs",
-              "RelativeDocumentMoniker": "Lms.Api\\Program.cs",
-              "ToolTip": "E:\\GitHub\\mi\\Services\\Lms.Api\\Program.cs",
-              "RelativeToolTip": "Lms.Api\\Program.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAAADAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "MIBaseController.cs",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\Controllers\\MIBaseController.cs",
+              "RelativeDocumentMoniker": "Lms.Api\\Controllers\\MIBaseController.cs",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\Lms.Api\\Controllers\\MIBaseController.cs",
+              "RelativeToolTip": "Lms.Api\\Controllers\\MIBaseController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T15:24:47.794Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DataResponse.cs",
-              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Common.Libs\\Common\\DataResponse.cs",
-              "RelativeDocumentMoniker": "Common.Libs\\Common\\DataResponse.cs",
-              "ToolTip": "E:\\GitHub\\mi\\Services\\Common.Libs\\Common\\DataResponse.cs",
-              "RelativeToolTip": "Common.Libs\\Common\\DataResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T15:19:05.613Z",
+              "WhenOpened": "2024-08-22T15:05:51.542Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ApiResponse.cs",
-              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Common.Libs\\Common\\ApiResponse.cs",
-              "RelativeDocumentMoniker": "Common.Libs\\Common\\ApiResponse.cs",
-              "ToolTip": "E:\\GitHub\\mi\\Services\\Common.Libs\\Common\\ApiResponse.cs",
-              "RelativeToolTip": "Common.Libs\\Common\\ApiResponse.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAA5wAoAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T15:14:51.28Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthClaim.cs",
-              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Common.Libs\\Auth\\AuthClaim.cs",
-              "RelativeDocumentMoniker": "Common.Libs\\Auth\\AuthClaim.cs",
-              "ToolTip": "E:\\GitHub\\mi\\Services\\Common.Libs\\Auth\\AuthClaim.cs",
-              "RelativeToolTip": "Common.Libs\\Auth\\AuthClaim.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T15:14:46.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Aprofile.cs",
-              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\MI.DBContext\\Models\\Aprofile.cs",
-              "RelativeDocumentMoniker": "MI.DBContext\\Models\\Aprofile.cs",
-              "ToolTip": "E:\\GitHub\\mi\\Services\\MI.DBContext\\Models\\Aprofile.cs",
-              "RelativeToolTip": "MI.DBContext\\Models\\Aprofile.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAA4wBIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T15:09:56.121Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "AProfileController.cs",
               "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\Controllers\\AProfileController.cs",
               "RelativeDocumentMoniker": "Lms.Api\\Controllers\\AProfileController.cs",
@@ -177,6 +166,81 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "PasswordGenerator.cs",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Common.Libs\\Helpers\\PasswordGenerator.cs",
+              "RelativeDocumentMoniker": "Common.Libs\\Helpers\\PasswordGenerator.cs",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\Common.Libs\\Helpers\\PasswordGenerator.cs",
+              "RelativeToolTip": "Common.Libs\\Helpers\\PasswordGenerator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T00:54:50.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Lms.Api\\Program.cs",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\Lms.Api\\Program.cs",
+              "RelativeToolTip": "Lms.Api\\Program.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAADAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T15:24:47.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DataResponse.cs",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Common.Libs\\Common\\DataResponse.cs",
+              "RelativeDocumentMoniker": "Common.Libs\\Common\\DataResponse.cs",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\Common.Libs\\Common\\DataResponse.cs",
+              "RelativeToolTip": "Common.Libs\\Common\\DataResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T15:19:05.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Common.Libs\\Common\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "Common.Libs\\Common\\ApiResponse.cs",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\Common.Libs\\Common\\ApiResponse.cs",
+              "RelativeToolTip": "Common.Libs\\Common\\ApiResponse.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAA5wAoAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T15:14:51.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthClaim.cs",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Common.Libs\\Auth\\AuthClaim.cs",
+              "RelativeDocumentMoniker": "Common.Libs\\Auth\\AuthClaim.cs",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\Common.Libs\\Auth\\AuthClaim.cs",
+              "RelativeToolTip": "Common.Libs\\Auth\\AuthClaim.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T15:14:46.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Aprofile.cs",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\MI.DBContext\\Models\\Aprofile.cs",
+              "RelativeDocumentMoniker": "MI.DBContext\\Models\\Aprofile.cs",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\MI.DBContext\\Models\\Aprofile.cs",
+              "RelativeToolTip": "MI.DBContext\\Models\\Aprofile.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAA4wBIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T15:09:56.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "MIBaseDAL.cs",
               "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\DAL\\MIBaseDAL.cs",
               "RelativeDocumentMoniker": "Lms.Api\\DAL\\MIBaseDAL.cs",
@@ -185,18 +249,6 @@
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABQAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T15:07:16.493Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MIBaseController.cs",
-              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\Controllers\\MIBaseController.cs",
-              "RelativeDocumentMoniker": "Lms.Api\\Controllers\\MIBaseController.cs",
-              "ToolTip": "E:\\GitHub\\mi\\Services\\Lms.Api\\Controllers\\MIBaseController.cs",
-              "RelativeToolTip": "Lms.Api\\Controllers\\MIBaseController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T15:05:51.542Z"
             }
           ]
         }
