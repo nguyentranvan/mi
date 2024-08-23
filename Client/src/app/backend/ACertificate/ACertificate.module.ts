@@ -17,6 +17,8 @@ import { RadioButtonModule } from 'primeng/radiobutton';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { DialogModule } from 'primeng/dialog';
 import { MessageService } from 'primeng/api';
+import { MenubarModule } from 'primeng/menubar';
+import { BreadcrumbModule } from 'primeng/breadcrumb';
 @NgModule({
     imports: [
         CommonModule,
@@ -34,7 +36,9 @@ import { MessageService } from 'primeng/api';
         DropdownModule,
         RadioButtonModule,
         InputNumberModule,
-        DialogModule
+        DialogModule,
+        MenubarModule,
+        BreadcrumbModule
     ],
     declarations: [CertificateComponent],
     providers: [MessageService]

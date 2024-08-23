@@ -26,6 +26,8 @@ export class CertificateComponent implements OnInit, OnDestroy {
     statuses: any[] = [];
 
     rowsPerPageOptions = [5, 10, 20];
+
+    breadcrumbItems = [];
     
     constructor(private productService: ProductService, private messageService: MessageService) { }
 
@@ -39,7 +41,10 @@ export class CertificateComponent implements OnInit, OnDestroy {
             { field: 'rating', header: 'Reviews' },
             { field: 'inventoryStatus', header: 'Status' }
         ];
-
+        this.breadcrumbItems = [];
+        this.breadcrumbItems.push({ label: 'Khóa học' });
+        this.breadcrumbItems.push({ label: 'Chứng chỉ' });
+        this.breadcrumbItems.push({ label: 'Danh sách mẫu chứng chỉ' })
         this.statuses = [
             { label: 'INSTOCK', value: 'instock' },
             { label: 'LOWSTOCK', value: 'lowstock' },
