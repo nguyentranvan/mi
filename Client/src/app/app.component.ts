@@ -27,5 +27,6 @@ export class AppComponent implements OnInit {
         };
         this.layoutService.config.set(config);
         this.oauthService.configure(authCodeFlowConfig);
+        this.oauthService.setupAutomaticSilentRefresh();
     }
 }

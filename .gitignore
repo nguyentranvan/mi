@@ -1,5 +1,5 @@
 bin
 obj
 node_modules
-Services/.vs
+Services/.vs/*
 Services/Lms.Api/appsettings.Development.json
