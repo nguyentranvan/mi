@@ -33,6 +33,7 @@ builder.Services.AddAuthentication(options =>
 #region Add Services 
 builder.Services.AddAuthorization();
 builder.Services.AddScoped<IAProfileDAL, AProfileDAL>();
+builder.Services.AddScoped<IACertificateDAL, ACertificateDAL>();
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;

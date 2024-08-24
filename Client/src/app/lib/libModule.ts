@@ -1,10 +1,8 @@
-import { NgModule } from '@angular/core';
+import { ModuleWithProviders, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
-import { ACertificateRoutingModule } from './ACertificate-routing.module';
-import { CertificateComponent } from './Certificate/Certificate.component';
 import { FileUploadModule } from 'primeng/fileupload';
 import { RippleModule } from 'primeng/ripple';
 import { ToastModule } from 'primeng/toast';
@@ -16,17 +14,16 @@ import { DropdownModule } from 'primeng/dropdown';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { DialogModule } from 'primeng/dialog';
+import { MessageService } from 'primeng/api';
 import { MenubarModule } from 'primeng/menubar';
 import { BreadcrumbModule } from 'primeng/breadcrumb';
-import { ACertificateService } from './Services/ACertificate.service';
-import { HttpClientModule } from '@angular/common/http';
-import { LibModule } from 'src/app/lib/libModule';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { OAuthStorage } from 'angular-oauth2-oidc';
+import { AuthorizationIntercepter } from 'src/app/lib/intercepters/authorization-intercepter';
 @NgModule({
     imports: [
         CommonModule,
         HttpClientModule,
-        ACertificateRoutingModule,
-        LibModule.forRoot(),
         TableModule,
         FileUploadModule,
         FormsModule,
@@ -44,9 +41,20 @@ import { LibModule } from 'src/app/lib/libModule';
         MenubarModule,
         BreadcrumbModule
     ],
-    declarations: [CertificateComponent],
+    declarations: [],
     providers: [
-        ACertificateService
+        MessageService,
+        {
+            provide: OAuthStorage,
+            useValue: localStorage
+        },
+        { provide: HTTP_INTERCEPTORS, useClass: AuthorizationIntercepter, multi: true}
     ]
 })
-export class ACertificateModule { }
+export class LibModule {
+    static forRoot() {
+        return {
+            ngModule: LibModule
+        };
+    }
+ }
