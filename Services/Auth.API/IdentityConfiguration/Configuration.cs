@@ -40,8 +40,10 @@ namespace Auth.API.IdentityConfiguration
                 RequireClientSecret = false,
                 AllowOfflineAccess = true,
                 AccessTokenLifetime =  60*60,
-                AllowedScopes = { "myApi.all" }
-            },
+                AllowedScopes = { "myApi.all" },
+                RefreshTokenExpiration = TokenExpiration.Sliding,
+                RequireConsent = false
+            }
         };
 
         public static IEnumerable<ApiScope> ApiScopes =>

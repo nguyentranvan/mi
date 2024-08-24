@@ -27,6 +27,7 @@ export class AppComponent implements OnInit {
         };
         this.layoutService.config.set(config);
         this.oauthService.configure(authCodeFlowConfig);
-        this.oauthService.setupAutomaticSilentRefresh();
+        //this.oauthService.silentRefreshRedirectUri = window.location.origin + "/silent-refresh.html";
+        //this.oauthService.setupAutomaticSilentRefresh({}, 'access_token');
     }
 }

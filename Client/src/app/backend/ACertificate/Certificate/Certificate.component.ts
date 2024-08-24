@@ -6,6 +6,7 @@ import { ProductService } from 'src/app/demo/service/product.service';
 import { PageBaseIndex } from 'src/app/lib/pages/base-page-index';
 import { ACertificateService } from '../Services/ACertificate.service';
 import { ACertificateModel } from '../Models/ACertificateModel';
+import { OAuthService } from 'angular-oauth2-oidc';
 
 @Component({
     templateUrl: './Certificate.component.html',
@@ -29,7 +30,6 @@ export class CertificateComponent extends PageBaseIndex implements OnInit, OnDes
     //#region page Function
     constructor(
         private itemService : ACertificateService,
-        private productService: ProductService, 
         private messageService: MessageService) {
         super();
     }
@@ -44,6 +44,11 @@ export class CertificateComponent extends PageBaseIndex implements OnInit, OnDes
 
     ngOnDestroy() {
 
+    }
+    doPageChange(event: any): void {
+        this.offset = event.first;
+        this.limit = event.rows;
+        this.search();
     }
     //#endregion
 
