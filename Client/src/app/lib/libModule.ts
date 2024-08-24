@@ -20,10 +20,12 @@ import { BreadcrumbModule } from 'primeng/breadcrumb';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { OAuthStorage } from 'angular-oauth2-oidc';
 import { AuthorizationIntercepter } from 'src/app/lib/intercepters/authorization-intercepter';
+import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
     imports: [
         CommonModule,
         HttpClientModule,
+        TranslateModule,
         TableModule,
         FileUploadModule,
         FormsModule,
@@ -51,10 +53,4 @@ import { AuthorizationIntercepter } from 'src/app/lib/intercepters/authorization
         { provide: HTTP_INTERCEPTORS, useClass: AuthorizationIntercepter, multi: true}
     ]
 })
-export class LibModule {
-    static forRoot() {
-        return {
-            ngModule: LibModule
-        };
-    }
- }
+export class LibModule {}

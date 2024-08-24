@@ -14,8 +14,14 @@ import { PhotoService } from './demo/service/photo.service';
 import { AuthService } from './lib/services/auth.service';
 import { AuthGuardService } from './lib/services/guard.service';
 import { OAuthModule, OAuthService, OAuthStorage } from 'angular-oauth2-oidc';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+export function createTranslateLoader(http: HttpClient) {
+    return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
+
 
 @NgModule({
     declarations: [AppComponent, NotfoundComponent],
@@ -25,7 +31,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         HttpClientModule,
         FormsModule,
         ReactiveFormsModule,
-        OAuthModule.forRoot()],
+        OAuthModule.forRoot(),
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: createTranslateLoader,
+                deps: [HttpClient]
+            }
+        })
+    ],
     providers: [
         { provide: LocationStrategy, useClass: PathLocationStrategy },
         CountryService, CustomerService, EventService, IconService, NodeService,

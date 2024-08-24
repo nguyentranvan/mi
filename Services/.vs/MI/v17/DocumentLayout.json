@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "E:\\GitHub\\mi\\Services\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\github\\mi\\services\\lms.api\\controllers\\acerticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|solutionrelative:lms.api\\controllers\\acerticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\github\\mi\\services\\lms.api\\dal\\acertificatedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|solutionrelative:lms.api\\dal\\acertificatedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\github\\mi\\services\\lms.api\\dal\\mibasedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|solutionrelative:lms.api\\dal\\mibasedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\github\\mi\\services\\lms.api\\controllers\\acerticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|solutionrelative:lms.api\\controllers\\acerticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|e:\\github\\mi\\services\\auth.api\\identityconfiguration\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MIBaseDAL.cs",
               "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\DAL\\MIBaseDAL.cs",
               "RelativeDocumentMoniker": "Lms.Api\\DAL\\MIBaseDAL.cs",
@@ -111,13 +111,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ACerticateController.cs",
               "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\Controllers\\ACerticateController.cs",
               "RelativeDocumentMoniker": "Lms.Api\\Controllers\\ACerticateController.cs",
               "ToolTip": "E:\\GitHub\\mi\\Services\\Lms.Api\\Controllers\\ACerticateController.cs",
               "RelativeToolTip": "Lms.Api\\Controllers\\ACerticateController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAA/AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T07:55:26.396Z",
               "EditorCaption": ""
@@ -175,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ACertificateDAL.cs",
               "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\DAL\\ACertificateDAL.cs",
               "RelativeDocumentMoniker": "Lms.Api\\DAL\\ACertificateDAL.cs",

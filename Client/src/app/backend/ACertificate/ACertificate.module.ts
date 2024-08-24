@@ -21,12 +21,14 @@ import { BreadcrumbModule } from 'primeng/breadcrumb';
 import { ACertificateService } from './Services/ACertificate.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LibModule } from 'src/app/lib/libModule';
+import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
     imports: [
         CommonModule,
         HttpClientModule,
         ACertificateRoutingModule,
-        LibModule.forRoot(),
+        LibModule,
+        TranslateModule,
         TableModule,
         FileUploadModule,
         FormsModule,

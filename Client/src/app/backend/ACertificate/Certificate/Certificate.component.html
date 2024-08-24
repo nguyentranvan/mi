@@ -5,8 +5,8 @@
             <p-toolbar>
                 <ng-template pTemplate="left">
                     <div class="my-2">
-                        <button pButton pRipple label="Thêm mới" icon="pi pi-plus" class="p-button-success mr-2" (click)="openNew()"></button>
-                        <button pButton pRipple label="Xóa" icon="pi pi-trash" class="p-button-danger" (click)="deleteSelectedProducts()" *ngIf="selectedProducts && selectedProducts.length"></button>
+                        <button pButton pRipple label='{{ "BTN_ADD" | translate }}' icon="pi pi-plus" class="p-button-success mr-2" (click)="openNew()"></button>
+                        <button pButton pRipple label='{{ "BTN_DEL" | translate }}' icon="pi pi-trash" class="p-button-danger" (click)="deleteSelectedItems()" *ngIf="selectedItems && selectedItems.length"></button>
                     </div>
                 </ng-template>
 
@@ -17,7 +17,7 @@
             </p-toolbar>
 
             <p-table #dt [value]="items" [columns]="cols" responsiveLayout="scroll" [rows]="limit" (onPage)="doPageChange($event)" 
-                [paginator]="true" [rowsPerPageOptions]="rowsPerPageOptions"  [(selection)]="selectedItems" 
+                [paginator]="true" [rowsPerPageOptions]="rowsPerPageOptions"  [(selection)]="selectedItems" dataKey="id"
                 selectionMode="multiple" [rowHover]="true">
                 <ng-template pTemplate="caption">
                     <div class="flex flex-column md:flex-row md:justify-content-between md:align-items-center">
@@ -80,7 +80,7 @@
             </p-table>
         </div>
 
-        <p-dialog [(visible)]="itemDialog" [style]="{width: '90%'}" header="Thông tin mẫu chứng chỉ" [modal]="true" class="p-fluid">
+        <p-dialog [(visible)]="itemDialog" [style]="{width: '90%'}" header='{{ "FORM_CERTIFICATION" | translate }}' [modal]="true" class="p-fluid">
             <ng-template pTemplate="content">
                 <div class="field">
                     <label for="name">Code</label>
@@ -99,30 +99,30 @@
             </ng-template>
 
             <ng-template pTemplate="footer">
-                <button pButton pRipple label="Cancel" icon="pi pi-times" class="p-button-text" (click)="hideDialog()"></button>
-                <button pButton pRipple label="Save" icon="pi pi-check" class="p-button-text" (click)="saveItem()"></button>
+                <button pButton pRipple label='{{ "BTN_CANCEL" | translate }}' icon="pi pi-times" class="p-button-text" (click)="hideDialog()"></button>
+                <button pButton pRipple label='{{ "BTN_SAVE" | translate }}' icon="pi pi-check" class="p-button-text" (click)="saveItem()"></button>
             </ng-template>
         </p-dialog>
 
-        <p-dialog [(visible)]="deleteItemDialog" header="Confirm" [modal]="true" [style]="{width:'450px'}">
+        <p-dialog [(visible)]="deleteItemDialog" header='{{ "MSG_CONFIRM" | translate }}' [modal]="true" [style]="{width:'450px'}">
             <div class="flex align-items-center justify-content-center">
                 <i class="pi pi-exclamation-triangle mr-3" style="font-size: 2rem"></i>
-                <span *ngIf="item">Are you sure you want to delete <b>{{item.name}}</b>?</span>
+                <span *ngIf="item">{{ "MSG_DELETE_SINGLE" | translate }} <b>{{item.name}}</b>?</span>
             </div>
             <ng-template pTemplate="footer">
-                <button pButton pRipple icon="pi pi-times" class="p-button-text" label="No" (click)="deleteItemDialog = false"></button>
-                <button pButton pRipple icon="pi pi-check" class="p-button-text" label="Yes" (click)="confirmDelete()"></button>
+                <button pButton pRipple icon="pi pi-times" class="p-button-text" label='{{ "BTN_NO" | translate }}' (click)="deleteItemDialog = false"></button>
+                <button pButton pRipple icon="pi pi-check" class="p-button-text" label='{{ "BTN_YES" | translate }}' (click)="confirmDelete()"></button>
             </ng-template>
         </p-dialog>
 
-        <p-dialog [(visible)]="deleteItemsDialog" header="Confirm" [modal]="true" [style]="{width:'450px'}">
+        <p-dialog [(visible)]="deleteItemsDialog" header='{{ "MSG_CONFIRM" | translate }}' [modal]="true" [style]="{width:'450px'}">
             <div class="flex align-items-center justify-content-center">
                 <i class="pi pi-exclamation-triangle mr-3" style="font-size: 2rem"></i>
-                <span>Are you sure you want to delete selected products?</span>
+                <span>{{ "MSG_DELETE_MUTIPLE" | translate }}</span>
             </div>
             <ng-template pTemplate="footer">
-                <button pButton pRipple icon="pi pi-times" class="p-button-text" label="No" (click)="deleteItemsDialog = false"></button>
-                <button pButton pRipple icon="pi pi-check" class="p-button-text" label="Yes" (click)="confirmDeleteSelected()"></button>
+                <button pButton pRipple icon="pi pi-times" class="p-button-text" label='{{ "BTN_NO" | translate }}' (click)="deleteItemsDialog = false"></button>
+                <button pButton pRipple icon="pi pi-check" class="p-button-text" label='{{ "BTN_YES" | translate }}' (click)="confirmDeleteSelected()"></button>
             </ng-template>
         </p-dialog>
     </div>

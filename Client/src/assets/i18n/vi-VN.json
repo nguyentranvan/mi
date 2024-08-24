@@ -1,0 +1,18 @@
+{
+    "FORM_CERTIFICATION": "Thông tin mẫu chứng chỉ",
+
+    "BTN_ADD": "Thêm mới",
+    "BTN_SAVE": "Cập nhật",
+    "BTN_CANCEL": "Hủy",
+    "BTN_YES": "Có",
+    "BTN_NO": "Không",
+    "BTN_DEL": "Xóa",
+
+    "MSG_SUCCESS": "Thực hiện thành công",
+    "MSG_ERROR" : "Không thực hiện được",
+    "MSG_EXCEPTION" : "Đã có lỗi xảy ra",
+    "MSG_EXCEPTION_HELP" : "Bạn vui lòng thực hiện lại sau!",
+    "MSG_CONFIRM" :"Xác nhận thông tin",
+    "MSG_DELETE_SINGLE" : "Bạn có chắc chắn thực hiện xóa",
+    "MSG_DELETE_MUTIPLE" : "Bạn có chắc chắn thực hiện xóa các bản ghi đã chọn không ?"
+}

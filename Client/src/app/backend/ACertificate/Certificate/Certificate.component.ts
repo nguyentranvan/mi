@@ -7,6 +7,7 @@ import { PageBaseIndex } from 'src/app/lib/pages/base-page-index';
 import { ACertificateService } from '../Services/ACertificate.service';
 import { ACertificateModel } from '../Models/ACertificateModel';
 import { OAuthService } from 'angular-oauth2-oidc';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     templateUrl: './Certificate.component.html',
@@ -14,21 +15,18 @@ import { OAuthService } from 'angular-oauth2-oidc';
 export class CertificateComponent extends PageBaseIndex implements OnInit, OnDestroy {
 
     itemDialog: boolean = false;
-
     deleteItemDialog: boolean = false;
-
     deleteItemsDialog: boolean = false;
 
     items: ACertificateModel[] = [];
-
     item: ACertificateModel;
-
     selectedItems: ACertificateModel[] = [];
 
     submitted: boolean = false;
 
     //#region page Function
     constructor(
+        private translate: TranslateService,
         private itemService : ACertificateService,
         private messageService: MessageService) {
         super();
@@ -66,7 +64,7 @@ export class CertificateComponent extends PageBaseIndex implements OnInit, OnDes
         this.submitted = false;
         this.itemDialog = true;
     }
-    deleteSelectedProducts() {
+    deleteSelectedItems() {
         this.deleteItemsDialog = true;
     }
 
@@ -90,7 +88,7 @@ export class CertificateComponent extends PageBaseIndex implements OnInit, OnDes
         this.itemService.delete(this.item.id).then(rs => {
             if(rs.status)
             {
-                this.messageService.add({ severity: 'success', summary: 'Successful', detail: 'Products Deleted', life: 3000 });
+                this.messageService.add({ severity: 'success', summary: this.translate.instant("MSG_SUCCESS")});
                 this.selectedItems = [];
                 this.search();
             }
@@ -126,13 +124,13 @@ export class CertificateComponent extends PageBaseIndex implements OnInit, OnDes
                 {
                     this.hideDialog();
                     this.search();
-                    this.messageService.add({ severity: 'success', summary: 'Successful', detail: 'Product Updated', life: 3000 });
+                    this.messageService.add({ severity: 'success', summary: this.translate.instant("MSG_SUCCESS")});
                 }else{
-                    this.messageService.add({ severity: 'error', summary: 'Successful', detail: 'Product Updated', life: 3000 });
+                    this.messageService.add({ severity: 'error', summary:  this.translate.instant("MSG_ERROR")});
                 }
             });
         } catch (error) {
-            this.messageService.add({ severity: 'error', summary: 'Successful', detail: 'Product Updated', life: 3000 });
+            this.messageService.add({ severity: 'error', summary: this.translate.instant("MSG_EXCEPTION"), detail: this.translate.instant("MSG_EXCEPTION_HELP"), life: 3000 });
         }
     }
     //#endregion

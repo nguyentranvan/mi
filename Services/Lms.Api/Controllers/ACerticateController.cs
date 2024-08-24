@@ -19,7 +19,7 @@ namespace Lms.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Search(int offset, int limit, string keyword)
+        public async Task<IActionResult> Search(int offset, int limit, string keyword = "")
         {
             var data = await _dal.Search(offset, limit, keyword);
             var response = new ApiResponse()
