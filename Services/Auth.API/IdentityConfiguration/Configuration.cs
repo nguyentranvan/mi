@@ -39,7 +39,7 @@ namespace Auth.API.IdentityConfiguration
                 AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
                 RequireClientSecret = false,
                 AllowOfflineAccess = true,
-                AccessTokenLifetime =  5*60,
+                AccessTokenLifetime =  60*60,
                 AllowedScopes = { "myApi.all" }
             },
         };

@@ -72,7 +72,6 @@ public partial class DBContext : DbContext
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.Description).HasMaxLength(500);
             entity.Property(e => e.FileId)
-                .IsRequired()
                 .HasMaxLength(250);
             entity.Property(e => e.LastUpdatedDate).HasColumnType("datetime");
             entity.Property(e => e.Name)

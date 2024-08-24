@@ -18,47 +18,95 @@ namespace Lms.Api.Controllers
             _logger = logger;
         }
 
-        [HttpGet("Search")]
+        [HttpGet]
         public async Task<IActionResult> Search()
         {
             var data = await _dal.GetAll();
             var response = new ApiResponse()
             {
                 MetaData = new ApiResponseMetaData { TotalRecord = data.TotalRows },
-                Data = data
+                Data = data.ListData
             };
             return Ok(response);
         }
         [HttpPost]
         public async Task<IActionResult> Update([FromBody] ACertificate model)
         {
-            var obj = new ACertificate();
-            //
-            if (model.Id == Guid.Empty)
+            var response = new ApiResponse() { Status = false };
+            try
             {
-                obj.Id = Guid.NewGuid();
-                obj.CreatedUserId = obj.LastUpdatedUserId = UserId;
-                obj.CreatedDate = obj.LastUpdatedDate = DateTime.UtcNow;
-                _dal.Add(obj);
+                var obj = new ACertificate();
+                if (model.Id == Guid.Empty)
+                {
+                    obj.Id = Guid.NewGuid();
+                    obj.CreatedUserId = obj.LastUpdatedUserId = UserId;
+                    obj.CreatedDate = obj.LastUpdatedDate = DateTime.UtcNow;
+                    _dal.Add(obj);
+                }
+                else
+                {
+                    obj = await _dal.Get(model.Id);
+                    obj.LastUpdatedUserId = UserId;
+                    obj.LastUpdatedDate = DateTime.UtcNow;
+                }
+                #region
+                obj.Code = model.Code;
+                obj.Name = model.Name;
+                obj.FileId = model.FileId;
+                obj.Description = model.Description;
+                #endregion
+                //
+                if (await _dal.SaveChangesAsync() > 0)
+                    response = new ApiResponse() { Data = obj };
+
+                return Ok(response);
             }
-            else
+            catch (Exception ex)
             {
-                obj = await _dal.Get(model.Id);
-                obj.CreatedDate = obj.LastUpdatedDate = DateTime.UtcNow;
+                response = new ApiResponse() { Status = false, Exception = ex };
+                return Ok(response);
             }
-            #region set
-            obj.Code = model.Code;
-            obj.Name = model.Name;
-            obj.FileId = model.FileId;
-            obj.Description = model.Description;
-            #endregion
-            //
-            await _dal.SaveChangesAsync();
-            var response = new ApiResponse()
+
+        }
+
+        [HttpGet("detail/{id}")]
+        public async Task<IActionResult> Detail([FromRoute] Guid id)
+        {
+            var response = new ApiResponse() { Status = false };
+            try
             {
-                Data = obj
-            };
-            return Ok(response);
+                var obj = await _dal.Get(id);
+                if (obj != null)
+                    response = new ApiResponse() { Data = obj };
+
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                response = new ApiResponse() { Status = false, Exception = ex };
+                return Ok(response);
+            }
+        }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete([FromRoute] Guid id)
+        {
+            var response = new ApiResponse() { Status = false };
+            try
+            {
+                var obj = await _dal.Get(id);
+                if (obj != null)
+                {
+                    _dal.Delete(obj);
+                    if (await _dal.SaveChangesAsync() > 0)
+                        response = new ApiResponse() { Data = obj };
+                }    
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                response = new ApiResponse() { Status = false, Exception = ex };
+                return Ok(response);
+            }
         }
     }
 }

@@ -11,7 +11,20 @@ export class ACertificateService extends BaseService {
         super(http, environment.apiDomain.lmsEnpoint + "/ACertificate");
     }
     search(offset: number, limit: number, keyword: string): Promise<ResponseResult> {
-        const url = `${this.svUrl}/search?offset=${offset}&limit=${limit}&keyword=${keyword}`;
+        const url = `${this.svUrl}?offset=${offset}&limit=${limit}&keyword=${keyword}`;
         return this.http.get<ResponseResult>(url).toPromise();
     }
+    save(model : any): Promise<ResponseResult> {
+        const url = `${this.svUrl}`;
+        return this.http.post<ResponseResult>(url, model).toPromise();
+    }
+    detail(id : any): Promise<ResponseResult> {
+        const url = `${this.svUrl}/detail/${id}`;
+        return this.http.get<ResponseResult>(url).toPromise();
+    }
+    delete(id : any): Promise<ResponseResult> {
+        const url = `${this.svUrl}/${id}`;
+        return this.http.delete<ResponseResult>(url).toPromise();
+    }
+    
 }

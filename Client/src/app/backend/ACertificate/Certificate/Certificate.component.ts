@@ -5,25 +5,26 @@ import { Product } from 'src/app/demo/api/product';
 import { ProductService } from 'src/app/demo/service/product.service';
 import { PageBaseIndex } from 'src/app/lib/pages/base-page-index';
 import { ACertificateService } from '../Services/ACertificate.service';
+import { ACertificateModel } from '../Models/ACertificateModel';
 
 @Component({
     templateUrl: './Certificate.component.html',
 })
 export class CertificateComponent extends PageBaseIndex implements OnInit, OnDestroy {
 
-    productDialog: boolean = false;
+    itemDialog: boolean = false;
 
-    deleteProductDialog: boolean = false;
+    deleteItemDialog: boolean = false;
 
-    deleteProductsDialog: boolean = false;
+    deleteItemsDialog: boolean = false;
 
-    products: Product[] = [];
+    items: ACertificateModel[] = [];
 
-    product: Product = {};
-    selectedProducts: Product[] = [];
+    item: ACertificateModel;
+
+    selectedItems: ACertificateModel[] = [];
 
     submitted: boolean = false;
-    statuses: any[] = [];
 
     //#region page Function
     constructor(
@@ -34,26 +35,11 @@ export class CertificateComponent extends PageBaseIndex implements OnInit, OnDes
     }
 
     ngOnInit() {
-        //this.productService.getProducts().then(data => this.products = data);
-        this.itemService.search(0,10,"").then(rs => 
-                {
-                    if(rs.status)
-                        this.products = rs.data;
-                }
-        );
         this.cols = [
-            { field: 'product', header: 'Product' },
-            { field: 'price', header: 'Price' },
-            { field: 'category', header: 'Category' },
-            { field: 'rating', header: 'Reviews' },
-            { field: 'inventoryStatus', header: 'Status' }
+            { field: 'code', header: 'Mã' },
+            { field: 'name', header: 'Tên chứng chỉ' }
         ];
-
-        this.statuses = [
-            { label: 'INSTOCK', value: 'instock' },
-            { label: 'LOWSTOCK', value: 'lowstock' },
-            { label: 'OUTOFSTOCK', value: 'outofstock' }
-        ];
+       this.search();
     }
 
     ngOnDestroy() {
@@ -62,93 +48,90 @@ export class CertificateComponent extends PageBaseIndex implements OnInit, OnDes
     //#endregion
 
     //#region data Function
+    search(){
+        this.itemService.search(this.offset, this.limit, this.keyword).then(rs => 
+            {
+                if(rs.status)
+                    this.items = rs.data;
+            }
+    );
+    }
     openNew() {
-        this.product = {};
+        this.item = new ACertificateModel();
         this.submitted = false;
-        this.productDialog = true;
+        this.itemDialog = true;
     }
     deleteSelectedProducts() {
-        this.deleteProductsDialog = true;
+        this.deleteItemsDialog = true;
     }
 
-    editProduct(product: Product) {
-        this.product = { ...product };
-        this.productDialog = true;
+    editItem(aCertificateModel: ACertificateModel) {
+        this.itemService.detail(aCertificateModel.id).then(rs => {
+            if(rs.status)
+            {
+                this.item = rs.data;
+                this.itemDialog = true;
+            }
+        })
     }
 
-    deleteProduct(product: Product) {
-        this.deleteProductDialog = true;
-        this.product = { ...product };
+    deleteItem(aCertificateModel: ACertificateModel) {
+        this.deleteItemDialog = true;
+        this.item = aCertificateModel;
     }
 
     confirmDeleteSelected() {
-        this.deleteProductsDialog = false;
-        this.products = this.products.filter(val => !this.selectedProducts.includes(val));
-        this.messageService.add({ severity: 'success', summary: 'Successful', detail: 'Products Deleted', life: 3000 });
-        this.selectedProducts = [];
+        this.deleteItemsDialog = false;
+        this.itemService.delete(this.item.id).then(rs => {
+            if(rs.status)
+            {
+                this.messageService.add({ severity: 'success', summary: 'Successful', detail: 'Products Deleted', life: 3000 });
+                this.selectedItems = [];
+                this.search();
+            }
+        })
+        //this.products = this.products.filter(val => !this.selectedProducts.includes(val));
+        
     }
 
     confirmDelete() {
-        this.deleteProductDialog = false;
-        this.products = this.products.filter(val => val.id !== this.product.id);
-        this.messageService.add({ severity: 'success', summary: 'Successful', detail: 'Product Deleted', life: 3000 });
-        this.product = {};
+        this.deleteItemDialog = false;
+        this.itemService.delete(this.item.id).then(rs => {
+            if(rs.status)
+            {
+                this.messageService.add({ severity: 'success', summary: 'Successful', detail: 'Products Deleted', life: 3000 });
+                this.selectedItems = [];
+                this.search();
+            }
+        })
     }
 
     hideDialog() {
-        this.productDialog = false;
+        this.itemDialog = false;
         this.submitted = false;
     }
 
-    saveProduct() {
+    saveItem() {
         this.submitted = true;
-
-        if (this.product.name?.trim()) {
-            if (this.product.id) {
-                // @ts-ignore
-                this.product.inventoryStatus = this.product.inventoryStatus.value ? this.product.inventoryStatus.value : this.product.inventoryStatus;
-                this.products[this.findIndexById(this.product.id)] = this.product;
-                this.messageService.add({ severity: 'success', summary: 'Successful', detail: 'Product Updated', life: 3000 });
-            } else {
-                this.product.id = this.createId();
-                this.product.code = this.createId();
-                this.product.image = 'product-placeholder.svg';
-                // @ts-ignore
-                this.product.inventoryStatus = this.product.inventoryStatus ? this.product.inventoryStatus.value : 'INSTOCK';
-                this.products.push(this.product);
-                this.messageService.add({ severity: 'success', summary: 'Successful', detail: 'Product Created', life: 3000 });
-            }
-
-            this.products = [...this.products];
-            this.productDialog = false;
-            this.product = {};
+        //#region  check save
+        //#endregion
+        try {
+            this.itemService.save(this.item).then(rs => {
+                if(rs.status)
+                {
+                    this.hideDialog();
+                    this.search();
+                    this.messageService.add({ severity: 'success', summary: 'Successful', detail: 'Product Updated', life: 3000 });
+                }else{
+                    this.messageService.add({ severity: 'error', summary: 'Successful', detail: 'Product Updated', life: 3000 });
+                }
+            });
+        } catch (error) {
+            this.messageService.add({ severity: 'error', summary: 'Successful', detail: 'Product Updated', life: 3000 });
         }
     }
     //#endregion
     //#region common Function
-    findIndexById(id: string): number {
-        let index = -1;
-        for (let i = 0; i < this.products.length; i++) {
-            if (this.products[i].id === id) {
-                index = i;
-                break;
-            }
-        }
-
-        return index;
-    }
-
-    createId(): string {
-        let id = '';
-        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-        for (let i = 0; i < 5; i++) {
-            id += chars.charAt(Math.floor(Math.random() * chars.length));
-        }
-        return id;
-    }
-
-    onGlobalFilter(table: Table, event: Event) {
-        table.filterGlobal((event.target as HTMLInputElement).value, 'contains');
-    }
+    
     //#endregion
 }
