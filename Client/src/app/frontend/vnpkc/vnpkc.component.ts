@@ -23,4 +23,8 @@ export class VNPKCHomeComponent implements OnInit {
         if (this.isLogin)
             this.currentUser = this.authService.getCurrentUser();
     }
+
+    logout(){
+        this.authService.logout();
+    }
 }

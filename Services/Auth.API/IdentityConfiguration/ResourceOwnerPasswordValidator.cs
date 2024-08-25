@@ -34,15 +34,21 @@ namespace Auth.API.Validators
 
         public async Task ValidateAsync(ResourceOwnerPasswordValidationContext context)
         {
-            var claims = new List<Claim>
+            if (context.UserName.Equals("admin") && context.Password.Equals("admin"))
+            {
+                var claims = new List<Claim>
             {
                 new Claim(AuthClaim.UserId, Guid.Empty.ToString()),
                 new Claim(AuthClaim.UserName, "admin"),
                 new Claim(AuthClaim.DisplayName, "Quản trị hệ thống"),
                 new Claim(AuthClaim.Email, "demo@local.com"),
             };
-
-            context.Result = new GrantValidationResult(context.UserName, "password", claims);
+                context.Result = new GrantValidationResult(context.UserName, "password", claims);
+            }
+            else
+            {
+                context.Result = new GrantValidationResult(TokenRequestErrors.InvalidGrant, "AUTHENTICATION_COMMON_ERROR");
+            }
         }
     }
 }

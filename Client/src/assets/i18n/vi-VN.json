@@ -1,5 +1,18 @@
 {
-    "FORM_CERTIFICATION": "Thông tin mẫu chứng chỉ",
+    "FORM_LOGIN": "HỆ THỐNG ĐÀO TẠO TRỰC TUYẾN",
+    "FORM_USERNAME" :"Tài khoản",
+    "FORM_PASSWORD" :"Mật khẩu",
+    "FORM_REMEMBER" :"Ghi nhớ",
+    "FORM_FORGOT_PASSWORD" :"Quên mật khẩu?",
+    "FORM_SIGNIN" :"ĐĂNG NHẬP",
+
+    "FORM_CERTIFICATION_LIST": "Danh sách mẫu chứng chỉ",
+    "FORM_CERTIFICATION_ITEM": "Thông tin mẫu chứng chỉ",
+    "FORM_CODE": "Mã",
+    "FORM_NAME": "Tên",
+    "FORM_DESCRIPTION": "Mô tả",
+    "FORM_REQUIRED": "Yêu cầu nhập thông tin.",
+
 
     "BTN_ADD": "Thêm mới",
     "BTN_SAVE": "Cập nhật",
@@ -14,5 +27,9 @@
     "MSG_EXCEPTION_HELP" : "Bạn vui lòng thực hiện lại sau!",
     "MSG_CONFIRM" :"Xác nhận thông tin",
     "MSG_DELETE_SINGLE" : "Bạn có chắc chắn thực hiện xóa",
-    "MSG_DELETE_MUTIPLE" : "Bạn có chắc chắn thực hiện xóa các bản ghi đã chọn không ?"
+    "MSG_DELETE_MUTIPLE" : "Bạn có chắc chắn thực hiện xóa các bản ghi đã chọn không ?",
+    "MSG_LOGIN_ERROR" : "Đăng nhập thất bại",
+    "MSG_LOGIN_ERROR_DETAIL" : "Thông tin đăng nhập không hợp lệ!",
+    "MSG_LOGIN_SUCCESS" : "Đăng nhập thành công",
+    "MSG_LOGIN_SUCCESS_DETAIL" : "đang chuyển hướng..."
 }

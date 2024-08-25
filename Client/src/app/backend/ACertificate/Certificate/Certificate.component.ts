@@ -1,12 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { MessageService } from 'primeng/api';
-import { Table } from 'primeng/table';
-import { Product } from 'src/app/demo/api/product';
-import { ProductService } from 'src/app/demo/service/product.service';
 import { PageBaseIndex } from 'src/app/lib/pages/base-page-index';
 import { ACertificateService } from '../Services/ACertificate.service';
 import { ACertificateModel } from '../Models/ACertificateModel';
-import { OAuthService } from 'angular-oauth2-oidc';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({

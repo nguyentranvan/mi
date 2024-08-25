@@ -7,6 +7,8 @@ import { AuthGuardService } from './lib/services/guard.service';
 @NgModule({
     imports: [
         RouterModule.forRoot([
+            { path: '', canActivate: [AuthGuardService], loadChildren: () => import('./frontend/vnpkc/vnpkc.module').then(m => m.VnpkcModule) },
+            { path: 'login', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) },
             { path: 'admin', canActivate: [AuthGuardService], component: AppLayoutComponent, loadChildren: () => import('./backend/dashboard/dashboard.module').then(m => m.DashboardModule) },
             {
                 path: 'demo', component: AppLayoutComponent,
@@ -18,8 +20,6 @@ import { AuthGuardService } from './lib/services/guard.service';
                     { path: 'pages', loadChildren: () => import('./demo/components/pages/pages.module').then(m => m.PagesModule) }
                 ]
             },
-            { path: 'auth', loadChildren: () => import('./demo/components/auth/auth.module').then(m => m.AuthModule) },
-            { path: '', loadChildren: () => import('./frontend/vnpkc/vnpkc.module').then(m => m.VnpkcModule) },
             { path: 'notfound', component: NotfoundComponent },
             { path: '**', redirectTo: '/notfound' },
         ], { scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled', onSameUrlNavigation: 'reload' })

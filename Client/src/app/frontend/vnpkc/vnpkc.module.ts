@@ -7,15 +7,19 @@ import { DividerModule } from 'primeng/divider';
 import { ChartModule } from 'primeng/chart';
 import { PanelModule } from 'primeng/panel';
 import { ButtonModule } from 'primeng/button';
+import { LibModule } from 'src/app/lib/libModule';
+import { ToastModule } from 'primeng/toast';
 
 @NgModule({
     imports: [
         CommonModule,
+        LibModule,
         VnpkcRoutingModule,
         DividerModule,
         StyleClassModule,
         ChartModule,
         PanelModule,
+        ToastModule,
         ButtonModule
     ],
     declarations: [VNPKCHomeComponent]

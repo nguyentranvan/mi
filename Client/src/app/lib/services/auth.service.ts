@@ -29,5 +29,9 @@ export class AuthService {
         }
     }
     return result;
-}
+  }
+  logout(){
+    this.oauthService.logOut();
+    window.location.href = "/login";
+  }
 }

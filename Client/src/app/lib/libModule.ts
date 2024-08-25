@@ -20,7 +20,7 @@ import { BreadcrumbModule } from 'primeng/breadcrumb';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { OAuthStorage } from 'angular-oauth2-oidc';
 import { AuthorizationIntercepter } from 'src/app/lib/intercepters/authorization-intercepter';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 @NgModule({
     imports: [
         CommonModule,
@@ -46,6 +46,7 @@ import { TranslateModule } from '@ngx-translate/core';
     declarations: [],
     providers: [
         MessageService,
+        TranslateService,
         {
             provide: OAuthStorage,
             useValue: localStorage
