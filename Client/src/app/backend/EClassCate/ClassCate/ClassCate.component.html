@@ -69,8 +69,16 @@
                 </div>
                 <div class="field">
                     <label for="parentid">{{ "FORM_PARENTID" | translate }}</label>
-                    <input type="text" pInputText id="parentid" [(ngModel)]="item.parentid" required autofocus [ngClass]="{'ng-invalid ng-dirty' : submitted && !item.parentid}"/>
-                    <small class="ng-dirty ng-invalid" *ngIf="submitted && !item.parentid">{{ "FORM_REQUIRED" | translate }}</small>
+                    <span class="p-float-label">
+                        <p-dropdown
+                            inputId="dropdown"
+                            [autoDisplayFirst]="false"
+                            [options]="lstParents"
+                            [(ngModel)]="value10"
+                            optionLabel="name"
+                        ></p-dropdown>
+                        <label for="dropdown">Dropdown</label>
+                    </span>
                 </div>
                 <div class="field">
                     <label for="code">{{ "FORM_CODE" | translate }}</label>
