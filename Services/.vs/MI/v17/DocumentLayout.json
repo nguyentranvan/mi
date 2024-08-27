@@ -3,22 +3,6 @@
   "WorkspaceRootPath": "E:\\GitHub\\mi\\Services\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|e:\\github\\mi\\services\\auth.api\\identityconfiguration\\resourceownerpasswordvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|solutionrelative:auth.api\\identityconfiguration\\resourceownerpasswordvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\github\\mi\\services\\lms.api\\controllers\\acerticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|solutionrelative:lms.api\\controllers\\acerticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\github\\mi\\services\\lms.api\\dal\\acertificatedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|solutionrelative:lms.api\\dal\\acertificatedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\github\\mi\\services\\lms.api\\dal\\mibasedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|solutionrelative:lms.api\\dal\\mibasedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|e:\\github\\mi\\services\\auth.api\\identityconfiguration\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|solutionrelative:auth.api\\identityconfiguration\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,16 +11,32 @@
       "RelativeMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|solutionrelative:auth.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|e:\\github\\mi\\services\\auth.api\\identityconfiguration\\resourceownerpasswordvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|solutionrelative:auth.api\\identityconfiguration\\resourceownerpasswordvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\github\\mi\\services\\lms.api\\controllers\\acerticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|solutionrelative:lms.api\\controllers\\acerticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\github\\mi\\services\\lms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|solutionrelative:lms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|e:\\github\\mi\\services\\auth.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|solutionrelative:auth.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\github\\mi\\services\\lms.api\\dal\\mibasedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|solutionrelative:lms.api\\dal\\mibasedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6F8904C6-9BE8-49E1-9581-9A9A09709560}|MI.DBContext\\MI.DBContext.csproj|e:\\github\\mi\\services\\mi.dbcontext\\models\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F8904C6-9BE8-49E1-9581-9A9A09709560}|MI.DBContext\\MI.DBContext.csproj|solutionrelative:mi.dbcontext\\models\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F8904C6-9BE8-49E1-9581-9A9A09709560}|MI.DBContext\\MI.DBContext.csproj|e:\\github\\mi\\services\\mi.dbcontext\\models\\acertificate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F8904C6-9BE8-49E1-9581-9A9A09709560}|MI.DBContext\\MI.DBContext.csproj|solutionrelative:mi.dbcontext\\models\\acertificate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\github\\mi\\services\\lms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|solutionrelative:lms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\github\\mi\\services\\lms.api\\controllers\\aprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -85,6 +85,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{6F8904C6-9BE8-49E1-9581-9A9A09709560}|MI.DBContext\\MI.DBContext.csproj|e:\\github\\mi\\services\\mi.dbcontext\\models\\aprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F8904C6-9BE8-49E1-9581-9A9A09709560}|MI.DBContext\\MI.DBContext.csproj|solutionrelative:mi.dbcontext\\models\\aprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\github\\mi\\services\\lms.api\\dal\\acertificatedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|solutionrelative:lms.api\\dal\\acertificatedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,13 +106,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Auth.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Auth.API\\appsettings.json",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\Auth.API\\appsettings.json",
+              "RelativeToolTip": "Auth.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-26T04:40:16.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ResourceOwnerPasswordValidator.cs",
               "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Auth.API\\IdentityConfiguration\\ResourceOwnerPasswordValidator.cs",
               "RelativeDocumentMoniker": "Auth.API\\IdentityConfiguration\\ResourceOwnerPasswordValidator.cs",
               "ToolTip": "E:\\GitHub\\mi\\Services\\Auth.API\\IdentityConfiguration\\ResourceOwnerPasswordValidator.cs",
               "RelativeToolTip": "Auth.API\\IdentityConfiguration\\ResourceOwnerPasswordValidator.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAADEAAAB4AAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACkAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-25T07:47:02.515Z",
               "EditorCaption": ""
@@ -116,19 +133,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MIBaseDAL.cs",
-              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\DAL\\MIBaseDAL.cs",
-              "RelativeDocumentMoniker": "Lms.Api\\DAL\\MIBaseDAL.cs",
-              "ToolTip": "E:\\GitHub\\mi\\Services\\Lms.Api\\DAL\\MIBaseDAL.cs",
-              "RelativeToolTip": "Lms.Api\\DAL\\MIBaseDAL.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T14:21:43.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "ACerticateController.cs",
               "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\Controllers\\ACerticateController.cs",
               "RelativeDocumentMoniker": "Lms.Api\\Controllers\\ACerticateController.cs",
@@ -141,13 +145,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Configuration.cs",
               "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Auth.API\\IdentityConfiguration\\Configuration.cs",
               "RelativeDocumentMoniker": "Auth.API\\IdentityConfiguration\\Configuration.cs",
               "ToolTip": "E:\\GitHub\\mi\\Services\\Auth.API\\IdentityConfiguration\\Configuration.cs",
               "RelativeToolTip": "Auth.API\\IdentityConfiguration\\Configuration.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAADwvy0AAAANAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAiwBsAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-23T15:19:23.272Z",
               "EditorCaption": ""
@@ -166,33 +170,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\Program.cs",
               "RelativeDocumentMoniker": "Lms.Api\\Program.cs",
               "ToolTip": "E:\\GitHub\\mi\\Services\\Lms.Api\\Program.cs",
               "RelativeToolTip": "Lms.Api\\Program.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAAADAAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAABZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T15:24:47.794Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Auth.API\\Program.cs",
               "RelativeDocumentMoniker": "Auth.API\\Program.cs",
               "ToolTip": "E:\\GitHub\\mi\\Services\\Auth.API\\Program.cs",
               "RelativeToolTip": "Auth.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-23T15:19:43.21Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "MIBaseDAL.cs",
+              "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\DAL\\MIBaseDAL.cs",
+              "RelativeDocumentMoniker": "Lms.Api\\DAL\\MIBaseDAL.cs",
+              "ToolTip": "E:\\GitHub\\mi\\Services\\Lms.Api\\DAL\\MIBaseDAL.cs",
+              "RelativeToolTip": "Lms.Api\\DAL\\MIBaseDAL.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T14:21:43.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "ACertificateDAL.cs",
               "DocumentMoniker": "E:\\GitHub\\mi\\Services\\Lms.Api\\DAL\\ACertificateDAL.cs",
               "RelativeDocumentMoniker": "Lms.Api\\DAL\\ACertificateDAL.cs",
@@ -200,8 +216,7 @@
               "RelativeToolTip": "Lms.Api\\DAL\\ACertificateDAL.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T07:54:02.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T07:54:02.877Z"
             },
             {
               "$type": "Document",
@@ -225,12 +240,11 @@
               "RelativeToolTip": "Lms.Api\\DAL\\AProfileDAL.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T00:58:09.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-23T00:58:09.349Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Acertificate.cs",
               "DocumentMoniker": "E:\\GitHub\\mi\\Services\\MI.DBContext\\Models\\Acertificate.cs",
               "RelativeDocumentMoniker": "MI.DBContext\\Models\\Acertificate.cs",
@@ -238,12 +252,11 @@
               "RelativeToolTip": "MI.DBContext\\Models\\Acertificate.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T09:54:42.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T09:54:42.547Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "DBContext.cs",
               "DocumentMoniker": "E:\\GitHub\\mi\\Services\\MI.DBContext\\Models\\DBContext.cs",
               "RelativeDocumentMoniker": "MI.DBContext\\Models\\DBContext.cs",
@@ -251,8 +264,7 @@
               "RelativeToolTip": "MI.DBContext\\Models\\DBContext.cs",
               "ViewState": "AQIAADIAAAAAAAAAAAAcwEkAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T09:54:55.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T09:54:55.574Z"
             },
             {
               "$type": "Document",
@@ -264,8 +276,7 @@
               "RelativeToolTip": "Lms.Api\\Controllers\\AProfileController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T15:07:58.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T15:07:58.106Z"
             },
             {
               "$type": "Document",
@@ -277,8 +288,7 @@
               "RelativeToolTip": "Lms.Api\\appsettings.Development.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-23T10:19:58.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-23T10:19:58.074Z"
             },
             {
               "$type": "Document",

@@ -25,9 +25,6 @@ namespace Auth.API.IdentityConfiguration
         new ApiResource[]
         {
             new ApiResource("lms.api")
-            {
-                Scopes = new List<string>{ "myApi.all" },
-            }
         };
         public static IEnumerable<Client> Clients =>
         new Client[]
