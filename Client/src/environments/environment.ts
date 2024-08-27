@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   apiDomain : {
-    lmsEnpoint: "http://localhost:5111"
+    lmsEnpoint: "http://localhost:5111",
+    fileEnpoint: "http://localhost:5111/File/Upload",
   }
 };
 

@@ -20,6 +20,7 @@ export class CertificateComponent extends PageBaseIndex implements OnInit, OnDes
 
     submitted: boolean = false;
 
+    uploadedFiles: any[] = [];
     //#region page Function
     constructor(
         private translate: TranslateService,
@@ -33,6 +34,7 @@ export class CertificateComponent extends PageBaseIndex implements OnInit, OnDes
             { field: 'code', header: 'Mã' },
             { field: 'name', header: 'Tên chứng chỉ' }
         ];
+        this.apiUrl +="?contentType=pdf&objectName=certificate"
        this.search();
     }
 
@@ -43,6 +45,13 @@ export class CertificateComponent extends PageBaseIndex implements OnInit, OnDes
         this.offset = event.first;
         this.limit = event.rows;
         this.search();
+    }
+    onUpload(event:any) {
+        this.uploadedFiles=[];
+        for(let file of event.files) {
+            this.item.fileId = file.name;
+            this.uploadedFiles.push(file);
+        }
     }
     //#endregion
 
@@ -69,6 +78,9 @@ export class CertificateComponent extends PageBaseIndex implements OnInit, OnDes
             if(rs.status)
             {
                 this.item = rs.data;
+                this.uploadedFiles=[];
+                if(this.item.fileId) 
+                    this.uploadedFiles.push(this.item.fileId);
                 this.itemDialog = true;
             }
         })

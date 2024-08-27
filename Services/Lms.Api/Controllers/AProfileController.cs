@@ -5,7 +5,7 @@ using MI.DBContext.Models;
 using Microsoft.EntityFrameworkCore;
 using Lms.API.DAL;
 using MI.HttpResponses.Lib;
-namespace Lms.Api.Controllers
+namespace Lms.API.Controllers
 {
     [ApiController]
     [Authorize]
