@@ -1,3 +1,4 @@
+using IdentityServer4.AccessTokenValidation;
 using Lms.API.DAL;
 using MI.DBContext.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -26,6 +27,7 @@ builder.Services.AddAuthentication(options =>
 {
     options.ApiName = apiName;
     options.Authority = authority;
+    options.SupportedTokens = IdentityServer4.AccessTokenValidation.SupportedTokens.Both;
     options.RequireHttpsMetadata = false;
 });
 #endregion
