@@ -1,0 +1,119 @@
+<div class="grid">
+    <div class="col-12">
+        <div class="card">
+            <p-toast></p-toast>
+            <p-toolbar>
+                <ng-template pTemplate="left">
+                    <div class="my-2">
+                        <button pButton pRipple label='{{ "BTN_ADD" | translate }}' icon="pi pi-plus" class="p-button-success mr-2" (click)="openNew()"></button>
+                        <button pButton pRipple label='{{ "BTN_DEL" | translate }}' icon="pi pi-trash" class="p-button-danger" (click)="deleteSelectedItems()" *ngIf="selectedItems && selectedItems.length"></button>
+                    </div>
+                </ng-template>
+
+                <ng-template pTemplate="right" *ngIf="1>1">
+                    <p-fileUpload mode="basic" accept="image/*" [maxFileSize]="1000000" label="Import" chooseLabel="Import" class="mr-2 inline-block"></p-fileUpload>
+                    <button pButton pRipple label="Export" icon="pi pi-upload" class="p-button-help" (click)="dt.exportCSV()"></button>
+                </ng-template>
+            </p-toolbar>
+
+            <p-table #dt [value]="items" [columns]="cols" responsiveLayout="scroll" [rows]="limit" (onPage)="doPageChange($event)" 
+                [paginator]="true" [rowsPerPageOptions]="rowsPerPageOptions"  [(selection)]="selectedItems" dataKey="id"
+                selectionMode="multiple" [rowHover]="true">
+                <ng-template pTemplate="caption">
+                    <div class="flex flex-column md:flex-row md:justify-content-between md:align-items-center">
+                      <h5 class="m-0" style="text-transform: uppercase;">{{ "FORM_CLASSCATE_LIST" | translate }}</h5>
+                        <span class="block mt-2 md:mt-0 p-input-icon-left">
+                            <i class="pi pi-search"></i>
+                            <input pInputText type="text" [(ngModel)]="keyword" (keyup.enter)="search()" placeholder="Search..."  class="w-full sm:w-auto"/>
+                        </span>
+                    </div>
+                </ng-template>
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th style="width: 3rem">
+                            <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+                        </th>
+                        <th *ngFor="let col of cols;let i = index;" pSortableColumn="'{{col.field}}'">{{col.header}} <p-sortIcon field="'{{col.field}}'"></p-sortIcon></th>
+                        <th></th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-item>
+                    <tr>
+                        <td>
+                            <p-tableCheckbox [value]="item"></p-tableCheckbox>
+                        </td>
+                        <td style="width:20%; min-width:10rem;"><span class="p-column-title">Code</span>
+                            {{item.code}}
+                        </td>
+                        <td style="width:70%; min-width:10rem;">
+                            <span class="p-column-title">Name</span>
+                            {{item.name}}
+                        </td>
+                        <td>
+                            <div class="flex">
+                                <button pButton pRipple icon="pi pi-pencil" class="p-button-rounded p-button-success mr-2" (click)="editItem(item)"></button>
+                                <button pButton pRipple icon="pi pi-trash" class="p-button-rounded p-button-warning" (click)="deleteItem(item)"></button>
+                            </div>
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+
+        <p-dialog [(visible)]="itemDialog" [style]="{width: '90%'}" header='{{ "FORM_CLASSCATE_ITEM" | translate }}' [modal]="true" class="p-fluid">
+            <ng-template pTemplate="content">
+                <div class="field">
+                    <label for="catetype">{{ "FORM_CATETYPE" | translate }}</label>
+                    <input type="text" pInputText id="catetype" [(ngModel)]="item.catetype" required autofocus [ngClass]="{'ng-invalid ng-dirty' : submitted && !item.catetype}"/>
+                    <small class="ng-dirty ng-invalid" *ngIf="submitted && !item.catetype">{{ "FORM_REQUIRED" | translate }}</small>
+                </div>
+                <div class="field">
+                    <label for="parentid">{{ "FORM_PARENTID" | translate }}</label>
+                    <input type="text" pInputText id="parentid" [(ngModel)]="item.parentid" required autofocus [ngClass]="{'ng-invalid ng-dirty' : submitted && !item.parentid}"/>
+                    <small class="ng-dirty ng-invalid" *ngIf="submitted && !item.parentid">{{ "FORM_REQUIRED" | translate }}</small>
+                </div>
+                <div class="field">
+                    <label for="code">{{ "FORM_CODE" | translate }}</label>
+                    <input type="text" pInputText id="code" [(ngModel)]="item.code" required autofocus [ngClass]="{'ng-invalid ng-dirty' : submitted && !item.code}"/>
+                    <small class="ng-dirty ng-invalid" *ngIf="submitted && !item.name">{{ "FORM_REQUIRED" | translate }}</small>
+                </div>
+                <div class="field">
+                    <label for="name">{{ "FORM_NAME" | translate }}</label>
+                    <input type="text" pInputText id="name" [(ngModel)]="item.name" required [ngClass]="{'ng-invalid ng-dirty' : submitted && !item.name}"/>
+                    <small class="ng-dirty ng-invalid" *ngIf="submitted && !item.name">{{ "FORM_REQUIRED" | translate }}</small>
+                </div>
+                <div class="field">
+                    <label for="ordernum">{{ "FORM_ORDERNUMBER" | translate }}</label>
+                    <input type="text" pInputText id="ordernum" [(ngModel)]="item.ordernum" required [ngClass]="{'ng-invalid ng-dirty' : submitted && !item.ordernum}"/>
+                </div>
+            </ng-template>
+
+            <ng-template pTemplate="footer">
+                <button pButton pRipple label='{{ "BTN_CANCEL" | translate }}' icon="pi pi-times" class="p-button-text" (click)="hideDialog()"></button>
+                <button pButton pRipple label='{{ "BTN_SAVE" | translate }}' icon="pi pi-check" class="p-button-text" (click)="saveItem()"></button>
+            </ng-template>
+        </p-dialog>
+
+        <p-dialog [(visible)]="deleteItemDialog" header='{{ "MSG_CONFIRM" | translate }}' [modal]="true" [style]="{width:'450px'}">
+            <div class="flex align-items-center justify-content-center">
+                <i class="pi pi-exclamation-triangle mr-3" style="font-size: 2rem"></i>
+                <span *ngIf="item">{{ "MSG_DELETE_SINGLE" | translate }} <b>{{item.name}}</b>?</span>
+            </div>
+            <ng-template pTemplate="footer">
+                <button pButton pRipple icon="pi pi-times" class="p-button-text" label='{{ "BTN_NO" | translate }}' (click)="deleteItemDialog = false"></button>
+                <button pButton pRipple icon="pi pi-check" class="p-button-text" label='{{ "BTN_YES" | translate }}' (click)="confirmDelete()"></button>
+            </ng-template>
+        </p-dialog>
+
+        <p-dialog [(visible)]="deleteItemsDialog" header='{{ "MSG_CONFIRM" | translate }}' [modal]="true" [style]="{width:'450px'}">
+            <div class="flex align-items-center justify-content-center">
+                <i class="pi pi-exclamation-triangle mr-3" style="font-size: 2rem"></i>
+                <span>{{ "MSG_DELETE_MUTIPLE" | translate }}</span>
+            </div>
+            <ng-template pTemplate="footer">
+                <button pButton pRipple icon="pi pi-times" class="p-button-text" label='{{ "BTN_NO" | translate }}' (click)="deleteItemsDialog = false"></button>
+                <button pButton pRipple icon="pi pi-check" class="p-button-text" label='{{ "BTN_YES" | translate }}' (click)="confirmDeleteSelected()"></button>
+            </ng-template>
+        </p-dialog>
+    </div>
+</div>

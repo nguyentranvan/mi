@@ -34,6 +34,7 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddAuthorization();
 builder.Services.AddScoped<IAProfileDAL, AProfileDAL>();
 builder.Services.AddScoped<IACertificateDAL, ACertificateDAL>();
+builder.Services.AddScoped<IEClassCateDAL, EClassCateDAL>();
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;

@@ -23,7 +23,7 @@ export class AppMenuComponent implements OnInit {
             {
                 label: 'Khóa học',
                 items: [
-                    { label: 'Danh mục', icon: 'pi pi-fw pi-bars', routerLink: ['/demo/uikit/input'] },
+                    { label: 'Danh mục', icon: 'pi pi-fw pi-bars', routerLink: ['/admin/classcate'] },
                     { label: 'Mẫu chứng chỉ', icon: 'pi pi-fw pi-verified', routerLink: ['/admin/certificate'] },
                     { label: 'Quản lý khóa học', icon: 'pi pi-fw pi-id-card', routerLink: ['/demo/uikit/formlayout'] },
                     { label: 'Cấp chứng chỉ', icon: 'pi pi-fw pi-check-circle', routerLink: ['/demo/uikit/floatlabel'] }

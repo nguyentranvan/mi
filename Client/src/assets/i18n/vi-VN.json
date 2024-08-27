@@ -13,6 +13,12 @@
     "FORM_DESCRIPTION": "Mô tả",
     "FORM_REQUIRED": "Yêu cầu nhập thông tin.",
 
+    "FORM_CLASSCATE_LIST": "Danh sách danh mục dùng chung",
+    "FORM_CLASSCATE_ITEM": "Thông tin danh mục dùng chung",
+    "FORM_CATETYPE": "Loại danh mục",
+    "FORM_PARENTID": "Danh mục cha",
+    "FORM_ORDERNUMBER": "Thứ tự",
+
 
     "BTN_ADD": "Thêm mới",
     "BTN_SAVE": "Cập nhật",
