@@ -16,7 +16,7 @@ export class EClassCateService extends BaseService {
         return this.http.get<ResponseResult>(url).toPromise();
     }
     searchByParentId(parentid: string): Promise<ResponseResult> {
-        const url = `${this.svUrl}?parentId=${parentid}`;
+        const url = `${this.svUrl}/SearchByParentId?parentId=${parentid}`;
         return this.http.get<ResponseResult>(url).toPromise();
     }
     save(model : any): Promise<ResponseResult> {

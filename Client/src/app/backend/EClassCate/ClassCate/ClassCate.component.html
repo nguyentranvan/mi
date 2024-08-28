@@ -70,14 +70,7 @@
                 <div class="field">
                     <label for="parentid">{{ "FORM_PARENTID" | translate }}</label>
                     <span class="p-float-label">
-                        <p-dropdown
-                            inputId="dropdown"
-                            [autoDisplayFirst]="false"
-                            [options]="lstParents"
-                            [(ngModel)]="value10"
-                            optionLabel="name"
-                        ></p-dropdown>
-                        <label for="dropdown">{{ "FORM_PARENTID" | translate }}</label>
+                        <p-dropdown [options]="lstParents" [(ngModel)]="item.parentid" optionLabel="name"></p-dropdown>
                     </span>
                 </div>
                 <div class="field">

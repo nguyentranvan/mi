@@ -5,6 +5,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\project\\2024\\gghb\\mi\\services\\lms.api\\controllers\\eclasscatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|solutionrelative:lms.api\\controllers\\eclasscatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\project\\2024\\gghb\\mi\\services\\lms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|solutionrelative:lms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|e:\\project\\2024\\gghb\\mi\\services\\lms.api\\controllers\\acerticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}|Lms.Api\\Lms.API.csproj|solutionrelative:lms.api\\controllers\\acerticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|e:\\project\\2024\\gghb\\mi\\services\\auth.api\\identityconfiguration\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF21E8BD-0483-445E-96A0-042FF3382500}|Auth.API\\Auth.API.csproj|solutionrelative:auth.api\\identityconfiguration\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F8904C6-9BE8-49E1-9581-9A9A09709560}|MI.DBContext\\MI.DBContext.csproj|e:\\project\\2024\\gghb\\mi\\services\\mi.dbcontext\\models\\eclasscate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F8904C6-9BE8-49E1-9581-9A9A09709560}|MI.DBContext\\MI.DBContext.csproj|solutionrelative:mi.dbcontext\\models\\eclasscate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +30,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Project\\2024\\GGHB\\mi\\Services\\Lms.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Lms.Api\\Program.cs",
+              "ToolTip": "E:\\Project\\2024\\GGHB\\mi\\Services\\Lms.Api\\Program.cs",
+              "RelativeToolTip": "Lms.Api\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T10:00:41.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ACerticateController.cs",
+              "DocumentMoniker": "E:\\Project\\2024\\GGHB\\mi\\Services\\Lms.Api\\Controllers\\ACerticateController.cs",
+              "RelativeDocumentMoniker": "Lms.Api\\Controllers\\ACerticateController.cs",
+              "ToolTip": "E:\\Project\\2024\\GGHB\\mi\\Services\\Lms.Api\\Controllers\\ACerticateController.cs",
+              "RelativeToolTip": "Lms.Api\\Controllers\\ACerticateController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAA9wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T09:56:22.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "E:\\Project\\2024\\GGHB\\mi\\Services\\Auth.API\\IdentityConfiguration\\Configuration.cs",
+              "RelativeDocumentMoniker": "Auth.API\\IdentityConfiguration\\Configuration.cs",
+              "ToolTip": "E:\\Project\\2024\\GGHB\\mi\\Services\\Auth.API\\IdentityConfiguration\\Configuration.cs",
+              "RelativeToolTip": "Auth.API\\IdentityConfiguration\\Configuration.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowBsAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T09:51:35.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EclassCate.cs",
+              "DocumentMoniker": "E:\\Project\\2024\\GGHB\\mi\\Services\\MI.DBContext\\Models\\EclassCate.cs",
+              "RelativeDocumentMoniker": "MI.DBContext\\Models\\EclassCate.cs",
+              "ToolTip": "E:\\Project\\2024\\GGHB\\mi\\Services\\MI.DBContext\\Models\\EclassCate.cs",
+              "RelativeToolTip": "MI.DBContext\\Models\\EclassCate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T09:42:19.39Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +92,7 @@
               "RelativeDocumentMoniker": "Lms.Api\\Controllers\\EClassCateController.cs",
               "ToolTip": "E:\\Project\\2024\\GGHB\\mi\\Services\\Lms.Api\\Controllers\\EClassCateController.cs",
               "RelativeToolTip": "Lms.Api\\Controllers\\EClassCateController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAgAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAApwDcAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-27T09:24:52.898Z",
               "EditorCaption": ""

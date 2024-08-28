@@ -29,7 +29,7 @@ namespace Lms.Api.Controllers
             };
             return Ok(response);
         }
-        [HttpGet]
+        [HttpGet("SearchByParentId")]
         public async Task<IActionResult> SearchByParentId(Guid parentId)
         {
             var data = await _dal.SearchByParentId(parentId);
