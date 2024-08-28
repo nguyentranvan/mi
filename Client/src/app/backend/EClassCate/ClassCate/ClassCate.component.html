@@ -63,16 +63,17 @@
         <p-dialog [(visible)]="itemDialog" [style]="{width: '90%'}" header='{{ "FORM_CLASSCATE_ITEM" | translate }}' [modal]="true" class="p-fluid">
             <ng-template pTemplate="content">
                 <div class="field">
-                    <label for="catetype">{{ "FORM_CATETYPE" | translate }}</label>
-                    <input type="text" pInputText id="catetype" [(ngModel)]="item.catetype" required autofocus [ngClass]="{'ng-invalid ng-dirty' : submitted && !item.catetype}"/>
-                    <small class="ng-dirty ng-invalid" *ngIf="submitted && !item.catetype">{{ "FORM_REQUIRED" | translate }}</small>
+                    <label for="cateType">{{ "FORM_CATETYPE" | translate }}</label>
+                    <input type="number" pInputText id="cateType" [(ngModel)]="item.cateType" required autofocus [ngClass]="{'ng-invalid ng-dirty' : submitted && !item.cateType}"/>
+                    <small class="ng-dirty ng-invalid" *ngIf="submitted && !item.cateType">{{ "FORM_REQUIRED" | translate }}</small>
                 </div>
                 <div class="field">
-                    <label for="parentid">{{ "FORM_PARENTID" | translate }}</label>
+                    <label for="parentId">{{ "FORM_PARENTID" | translate }}</label>
                     <span class="p-float-label">
-                        <p-dropdown [options]="lstParents" [(ngModel)]="item.parentid" optionLabel="name"></p-dropdown>
+                        <p-dropdown id="parentId" [options]="lstParents" [(ngModel)]="item.parentId" optionLabel="name"></p-dropdown>
                     </span>
                 </div>
+                
                 <div class="field">
                     <label for="code">{{ "FORM_CODE" | translate }}</label>
                     <input type="text" pInputText id="code" [(ngModel)]="item.code" required autofocus [ngClass]="{'ng-invalid ng-dirty' : submitted && !item.code}"/>
@@ -84,8 +85,8 @@
                     <small class="ng-dirty ng-invalid" *ngIf="submitted && !item.name">{{ "FORM_REQUIRED" | translate }}</small>
                 </div>
                 <div class="field">
-                    <label for="ordernum">{{ "FORM_ORDERNUMBER" | translate }}</label>
-                    <input type="text" pInputText id="ordernum" [(ngModel)]="item.ordernum" required [ngClass]="{'ng-invalid ng-dirty' : submitted && !item.ordernum}"/>
+                    <label for="orderNum">{{ "FORM_ORDERNUMBER" | translate }}</label>
+                    <input type="number" pInputText id="orderNum" [(ngModel)]="item.orderNum" required [ngClass]="{'ng-invalid ng-dirty' : submitted && !item.orderNum}"/>
                 </div>
             </ng-template>
 

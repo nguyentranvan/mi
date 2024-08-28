@@ -17,7 +17,7 @@ export class ClassCateComponent extends PageBaseIndex implements OnInit, OnDestr
     items: EClassCateModel[] = [];
     item: EClassCateModel;
     selectedItems: EClassCateModel[] = [];
-    lstParents: any[];
+    lstParents= [];
 
     submitted: boolean = false;
 
@@ -61,9 +61,18 @@ export class ClassCateComponent extends PageBaseIndex implements OnInit, OnDestr
         this.itemService.searchByParentId(Guid.createEmpty().toJSON().value).then(rs => 
             {
                 if(rs.status)
-                    this.lstParents = rs.data;
+                {
+                    var arr = [];
+                    rs.data.forEach((item, index) => {
+                        arr.push({ name: item.name, value: item.id });
+                    });
+                    this.lstParents = arr;
+                    console.log(this.lstParents);
+                }
+                    
             }
-    );
+        );
+        
     }
     openNew() {
         this.item = new EClassCateModel();
@@ -124,6 +133,10 @@ export class ClassCateComponent extends PageBaseIndex implements OnInit, OnDestr
         this.submitted = true;
         //#region  check save
         //#endregion
+        if (this.item.parentId) {
+            this.item.parentId = this.item.parentId.toString();
+        }
+        console.log(this.item);
         try {
             this.itemService.save(this.item).then(rs => {
                 if(rs.status)

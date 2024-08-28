@@ -29,19 +29,9 @@ namespace Lms.Api.Controllers
             };
             return Ok(response);
         }
-        [HttpGet("SearchByParentId")]
-        public async Task<IActionResult> SearchByParentId(Guid parentId)
-        {
-            var data = await _dal.SearchByParentId(parentId);
-            var response = new ApiResponse()
-            {
-                MetaData = new ApiResponseMetaData { TotalRecord = data.TotalRows },
-                Data = data.ListData
-            };
-            return Ok(response);
-        }
+        
 
-        [HttpPost]
+        [HttpPost("Update")]
         public async Task<IActionResult> Update([FromBody] EClassCate model)
         {
             var response = new ApiResponse() { Status = false };
@@ -81,7 +71,17 @@ namespace Lms.Api.Controllers
             }
 
         }
-
+        [HttpGet("SearchByParentId")]
+        public async Task<IActionResult> SearchByParentId(Guid parentId)
+        {
+            var data = await _dal.SearchByParentId(parentId);
+            var response = new ApiResponse()
+            {
+                MetaData = new ApiResponseMetaData { TotalRecord = data.TotalRows },
+                Data = data.ListData
+            };
+            return Ok(response);
+        }
         [HttpGet("detail/{id}")]
         public async Task<IActionResult> Detail([FromRoute] Guid id)
         {

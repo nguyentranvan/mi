@@ -5,9 +5,9 @@ export class EClassCateModel extends BaseMoel{
     id : string;
     code : string;
     name : string;
-    parentid : string;
-    catetype : number;
-    ordernum : number;
+    parentId : string;
+    cateType : number;
+    orderNum : number;
 
     public EClassCateModel(){
        this.id = Guid.create().toJSON().value;

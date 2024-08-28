@@ -20,7 +20,7 @@ export class EClassCateService extends BaseService {
         return this.http.get<ResponseResult>(url).toPromise();
     }
     save(model : any): Promise<ResponseResult> {
-        const url = `${this.svUrl}`;
+        const url = `${this.svUrl}/Update`;
         return this.http.post<ResponseResult>(url, model).toPromise();
     }
     detail(id : any): Promise<ResponseResult> {
