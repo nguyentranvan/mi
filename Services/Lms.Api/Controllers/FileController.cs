@@ -186,6 +186,7 @@ namespace Lms.API.Controllers
             return folder;
         }
 
+
         private bool ReadScormPackage(string packagePath, out string result, out string packageType)
         {
             var xmlDoc = default(XmlDocument);
