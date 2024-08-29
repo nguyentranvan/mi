@@ -21,7 +21,6 @@ export class CertificateComponent extends PageBaseIndex implements OnInit, OnDes
     submitted: boolean = false;
 
     uploadedFiles: any[] = [];
-    //#region page Function
     constructor(
         private translate: TranslateService,
         private itemService : ACertificateService,
@@ -35,7 +34,7 @@ export class CertificateComponent extends PageBaseIndex implements OnInit, OnDes
             { field: 'name', header: 'Tên chứng chỉ' }
         ];
         this.apiUrl +="?contentType=pdf&objectName=certificate"
-       this.search();
+        this.search();
     }
 
     ngOnDestroy() {
@@ -53,9 +52,6 @@ export class CertificateComponent extends PageBaseIndex implements OnInit, OnDes
             this.uploadedFiles.push(file);
         }
     }
-    //#endregion
-
-    //#region data Function
     search(){
         this.itemService.search(this.offset, this.limit, this.keyword).then(rs => 
             {
@@ -101,8 +97,6 @@ export class CertificateComponent extends PageBaseIndex implements OnInit, OnDes
                 this.search();
             }
         })
-        //this.products = this.products.filter(val => !this.selectedProducts.includes(val));
-        
     }
 
     confirmDelete() {
@@ -124,8 +118,6 @@ export class CertificateComponent extends PageBaseIndex implements OnInit, OnDes
 
     saveItem() {
         this.submitted = true;
-        //#region  check save
-        //#endregion
         try {
             this.itemService.save(this.item).then(rs => {
                 if(rs.status)
@@ -141,8 +133,4 @@ export class CertificateComponent extends PageBaseIndex implements OnInit, OnDes
             this.messageService.add({ severity: 'error', summary: this.translate.instant("MSG_EXCEPTION"), detail: this.translate.instant("MSG_EXCEPTION_HELP"), life: 3000 });
         }
     }
-    //#endregion
-    //#region common Function
-    
-    //#endregion
 }
