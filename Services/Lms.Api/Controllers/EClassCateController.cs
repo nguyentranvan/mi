@@ -100,6 +100,7 @@ namespace Lms.Api.Controllers
                 return Ok(response);
             }
         }
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete([FromRoute] Guid id)
         {
