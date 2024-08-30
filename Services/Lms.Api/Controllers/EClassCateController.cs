@@ -16,6 +16,7 @@ namespace Lms.Api.Controllers
         public EClassCateController(ILogger<EClassCateController> logger, IEClassCateDAL dal) : base(dal)
         {
             _logger = logger;
+            _logger = logger;
         }
 
         [HttpGet]
