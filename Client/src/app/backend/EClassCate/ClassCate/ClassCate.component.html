@@ -73,7 +73,6 @@
                         <p-dropdown id="parentId" [options]="lstParents" [(ngModel)]="item.parentId" optionLabel="name"></p-dropdown>
                     </span>
                 </div>
-                
                 <div class="field">
                     <label for="code">{{ "FORM_CODE" | translate }}</label>
                     <input type="text" pInputText id="code" [(ngModel)]="item.code" required autofocus [ngClass]="{'ng-invalid ng-dirty' : submitted && !item.code}"/>
