@@ -43,6 +43,8 @@ builder.Services.AddControllers().AddJsonOptions(options =>
     options.JsonSerializerOptions.DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull;
 });
 #endregion
+//
+builder.Services.AddCors();
 // Add services to the container.
 var app = builder.Build();
 // Configure the HTTP request pipeline.

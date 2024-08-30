@@ -12,6 +12,7 @@
     "FORM_NAME": "Tên",
     "FORM_DESCRIPTION": "Mô tả",
     "FORM_REQUIRED": "Yêu cầu nhập thông tin.",
+    "FORM_FILE_TEMPLATE": "File mẫu chứng chỉ",
 
     "FORM_CLASSCATE_LIST": "Danh sách danh mục dùng chung",
     "FORM_CLASSCATE_ITEM": "Thông tin danh mục dùng chung",

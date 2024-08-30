@@ -5,6 +5,7 @@ export class ACertificateModel extends BaseMoel{
     id : string;
     code : string;
     name : string;
+    fileId : string;
     description : string;
 
     public ACertificateModel(){

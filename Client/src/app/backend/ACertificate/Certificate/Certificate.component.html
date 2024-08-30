@@ -72,6 +72,14 @@
                     <input type="text" pInputText id="name" [(ngModel)]="item.name" required [ngClass]="{'ng-invalid ng-dirty' : submitted && !item.name}"/>
                     <small class="ng-dirty ng-invalid" *ngIf="submitted && !item.name">{{ "FORM_REQUIRED" | translate }}</small>
                 </div>
+
+                <div class="field">
+                    <label for="fileId">{{ "FORM_FILE_TEMPLATE" | translate }}</label>
+                    <input type="text" pInputText id="fileId" [(ngModel)]="item.fileId" [disabled]="true"/>
+                    <p-fileUpload [multiple]="false"   url="{{apiUrl}}" accept="image/*" [maxFileSize]="1000000" (onUpload)="onUpload($event)">
+                    </p-fileUpload>
+                </div>
+
                 <div class="field">
                     <label for="description">{{ "FORM_DESCRIPTION" | translate }}</label>
                     <textarea id="description" pInputTextarea [(ngModel)]="item.description" rows="3" cols="20"></textarea>

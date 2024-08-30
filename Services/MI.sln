@@ -3,19 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E466DE24-A2FF-4B6C-86F4-64443072C5CD}"
-	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
-		thunder-collection.json = thunder-collection.json
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lms.API", "Lms.Api\Lms.API.csproj", "{95D8C0B9-D572-485C-8530-3D7B0EDA43A2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth.API", "Auth.API\Auth.API.csproj", "{DF21E8BD-0483-445E-96A0-042FF3382500}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Libs", "Common.Libs\Common.Libs.csproj", "{4A4FB35A-1546-4BF5-BE33-A0C00E5F966D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MI.DBContext", "MI.DBContext\MI.DBContext.csproj", "{6F8904C6-9BE8-49E1-9581-9A9A09709560}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MI.DBContext", "MI.DBContext\MI.DBContext.csproj", "{6F8904C6-9BE8-49E1-9581-9A9A09709560}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
